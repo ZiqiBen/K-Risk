@@ -1,0 +1,1185 @@
+event,split,model,action,reason,rel,other,t,gap,ego_speed,ego_acc,o_speed,o_acc,safe_actions,n_safe,text
+expresswayA_track_10_car_4447_frame_377_to_470,train,gpt4o,ACC,collision,preceding,4431,1.7000000000000002,6.082460946627014,1.870328206658088,0.024036062064778114,9.547918011776346e-16,-3.6695163518246905,IDLE;RIGHT;DEC,3,"Ego vehicle 4447 in lane 5, speed 1.9 m/s, acceleration +0.0 m/s^2, heading 179 deg.
+Surrounding vehicles:
+- Vehicle 4431, directly ahead in your lane: gap 6.1 m, speed 0.0 m/s, braking (-3.7 m/s^2).
+- Vehicle 4466, behind you in your lane: gap 5.4 m, speed 1.6 m/s, steady speed (+0.4 m/s^2).
+- Vehicle 4668, ahead in your right adjacent lane: gap 0.3 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 4700, alongside you in your right adjacent lane: side by side, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 4760, behind you in your right adjacent lane: gap 3.0 m, speed 0.2 m/s, braking (-4.5 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 4431, which is directly ahead in your lane (gap 6.1 m, speed 0.0 m/s, acceleration -3.7 m/s^2), about 1.7 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Right (ID 3), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+expresswayA_track_16_car_459_frame_4236_to_4331,test,gpt4o,IDLE,collision,right_alongside,453,1.0,0.0,16.07425970092799,-1.7858061557460292,10.972681690655298,6.263154829948648,,0,"Ego vehicle 459 in lane 8, speed 16.1 m/s, acceleration -1.8 m/s^2, heading 359 deg.
+Surrounding vehicles:
+- Vehicle 461, behind you in your lane: gap 11.6 m, speed 13.8 m/s, accelerating, drifting right (+0.8 m/s^2).
+- Vehicle 462, ahead in your left adjacent lane: gap 31.5 m, speed 22.2 m/s, steady speed (-0.4 m/s^2).
+- Vehicle 466, behind you in your left adjacent lane: gap 15.1 m, speed 19.4 m/s, steady speed (+0.4 m/s^2).
+- Vehicle 445, ahead in your right adjacent lane: gap 31.5 m, speed 11.1 m/s, steady speed (-0.4 m/s^2).
+- Vehicle 453, alongside you in your right adjacent lane: side by side, speed 11.0 m/s, accelerating (+6.3 m/s^2).
+Chosen action: IDLE (keep lane and speed) (Action ID 1).
+Result: UNSAFE - the ego would collide with vehicle 453, which is alongside you in your right adjacent lane (gap 0.0 m, speed 11.0 m/s, acceleration +6.3 m/s^2), about 1.0 s after the decision.
+Safe actions in this situation: none - every action leads to a conflict within 2 s; the least bad is Turn Left (ID 2), whose conflict comes latest (1.9 s).
+Lesson: The vehicle alongside you in your right adjacent lane is moving into or overlapping your lane; staying beside it is not safe. Choose the speed change that opens a gap to it (see the safe actions) instead of IDLE (keep lane and speed)."
+expresswayA_track_16_car_459_frame_4236_to_4331,test,gpt41,IDLE,collision,right_alongside,453,1.0,0.0,16.07425970092799,-1.7858061557460292,10.972681690655298,6.263154829948648,,0,"Ego vehicle 459 in lane 8, speed 16.1 m/s, acceleration -1.8 m/s^2, heading 359 deg.
+Surrounding vehicles:
+- Vehicle 461, behind you in your lane: gap 11.6 m, speed 13.8 m/s, accelerating, drifting right (+0.8 m/s^2).
+- Vehicle 462, ahead in your left adjacent lane: gap 31.5 m, speed 22.2 m/s, steady speed (-0.4 m/s^2).
+- Vehicle 466, behind you in your left adjacent lane: gap 15.1 m, speed 19.4 m/s, steady speed (+0.4 m/s^2).
+- Vehicle 445, ahead in your right adjacent lane: gap 31.5 m, speed 11.1 m/s, steady speed (-0.4 m/s^2).
+- Vehicle 453, alongside you in your right adjacent lane: side by side, speed 11.0 m/s, accelerating (+6.3 m/s^2).
+Chosen action: IDLE (keep lane and speed) (Action ID 1).
+Result: UNSAFE - the ego would collide with vehicle 453, which is alongside you in your right adjacent lane (gap 0.0 m, speed 11.0 m/s, acceleration +6.3 m/s^2), about 1.0 s after the decision.
+Safe actions in this situation: none - every action leads to a conflict within 2 s; the least bad is Turn Left (ID 2), whose conflict comes latest (1.9 s).
+Lesson: The vehicle alongside you in your right adjacent lane is moving into or overlapping your lane; staying beside it is not safe. Choose the speed change that opens a gap to it (see the safe actions) instead of IDLE (keep lane and speed)."
+expresswayA_track_18_car_1986_frame_2006_to_2100,test,gpt4o,IDLE,collision,preceding,1981,1.1,1.721538715841267,6.146548842289633,-4.907887131856691,5.457833208382042,-1.5357063920647889,LEFT;DEC,2,"Ego vehicle 1986 in lane 7, speed 6.1 m/s, acceleration -4.9 m/s^2, heading 360 deg.
+Surrounding vehicles:
+- Vehicle 1981, directly ahead in your lane: gap 1.7 m, speed 5.5 m/s, braking (-1.5 m/s^2).
+- Vehicle 2001, behind you in your lane: gap 138.7 m, speed 16.8 m/s, steady speed (-0.3 m/s^2).
+- Vehicle 1985, ahead in your left adjacent lane: gap 52.0 m, speed 19.9 m/s, steady speed (+0.2 m/s^2).
+- Vehicle 1992, alongside you in your left adjacent lane: side by side, speed 17.8 m/s, accelerating (+0.5 m/s^2).
+- Vehicle 2000, behind you in your left adjacent lane: gap 122.0 m, speed 18.4 m/s, steady speed (-0.3 m/s^2).
+- Vehicle 1984, ahead in your right adjacent lane: gap 4.0 m, speed 11.8 m/s, accelerating (+1.2 m/s^2).
+- Vehicle 1994, behind you in your right adjacent lane: gap 60.3 m, speed 11.8 m/s, steady speed, drifting right (-0.3 m/s^2).
+Chosen action: IDLE (keep lane and speed) (Action ID 1).
+Result: UNSAFE - the ego would collide with vehicle 1981, which is directly ahead in your lane (gap 1.7 m, speed 5.5 m/s, acceleration -1.5 m/s^2), about 1.1 s after the decision.
+Safe actions in this situation: Turn Left (ID 2), Deceleration (ID 5).
+Lesson: Keeping your speed is not safe when you are closing in on the vehicle ahead; slow down early or change to a free adjacent lane."
+expresswayA_track_18_car_1986_frame_2006_to_2100,test,gpt41,RIGHT,collision,preceding,1981,1.1,1.721538715841267,6.146548842289633,-4.907887131856691,5.457833208382042,-1.5357063920647889,LEFT;DEC,2,"Ego vehicle 1986 in lane 7, speed 6.1 m/s, acceleration -4.9 m/s^2, heading 360 deg.
+Surrounding vehicles:
+- Vehicle 1981, directly ahead in your lane: gap 1.7 m, speed 5.5 m/s, braking (-1.5 m/s^2).
+- Vehicle 2001, behind you in your lane: gap 138.7 m, speed 16.8 m/s, steady speed (-0.3 m/s^2).
+- Vehicle 1985, ahead in your left adjacent lane: gap 52.0 m, speed 19.9 m/s, steady speed (+0.2 m/s^2).
+- Vehicle 1992, alongside you in your left adjacent lane: side by side, speed 17.8 m/s, accelerating (+0.5 m/s^2).
+- Vehicle 2000, behind you in your left adjacent lane: gap 122.0 m, speed 18.4 m/s, steady speed (-0.3 m/s^2).
+- Vehicle 1984, ahead in your right adjacent lane: gap 4.0 m, speed 11.8 m/s, accelerating (+1.2 m/s^2).
+- Vehicle 1994, behind you in your right adjacent lane: gap 60.3 m, speed 11.8 m/s, steady speed, drifting right (-0.3 m/s^2).
+Chosen action: Turn Right (Action ID 3).
+Result: UNSAFE - the ego would collide with vehicle 1981, which is directly ahead in your lane (gap 1.7 m, speed 5.5 m/s, acceleration -1.5 m/s^2), about 1.1 s after the decision.
+Safe actions in this situation: Turn Left (ID 2), Deceleration (ID 5).
+Lesson: This lane change is too slow to escape a vehicle that is already very close ahead in your lane; you would hit it before leaving the lane."
+expresswayA_track_22_car_13738_frame_6927_to_7047,train,gpt4o,DEC,collision,preceding,13879,1.0,14.961921147872296,18.34976934350372,-5.738101447423566,2.382307684456464e-16,-0.925889355780588,,0,"Ego vehicle 13738 in lane 5, speed 18.3 m/s, acceleration -5.7 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 13879, directly ahead in your lane: gap 15.0 m, speed 0.0 m/s, braking (-0.9 m/s^2).
+- Vehicle 13747, behind you in your lane: gap 15.6 m, speed 17.6 m/s, braking (-2.7 m/s^2).
+- Vehicle 13722, ahead in your right adjacent lane: gap 12.6 m, speed 17.2 m/s, braking (-3.9 m/s^2).
+- Vehicle 13743, behind you in your right adjacent lane: gap 2.0 m, speed 18.4 m/s, braking (-2.7 m/s^2).
+Chosen action: Deceleration (Action ID 5).
+Result: UNSAFE - the ego would collide with vehicle 13879, which is directly ahead in your lane (gap 15.0 m, speed 0.0 m/s, acceleration -0.9 m/s^2), about 1.0 s after the decision.
+Safe actions in this situation: none - every action leads to a conflict within 2 s; the least bad is Deceleration (ID 5), whose conflict comes latest (1.0 s).
+Lesson: Moderate braking may not be enough when the gap ahead is very short; check whether a free adjacent lane gives more room."
+expresswayA_track_22_car_13738_frame_6927_to_7047,train,gpt41,DEC,collision,preceding,13879,1.0,14.961921147872296,18.34976934350372,-5.738101447423566,2.382307684456464e-16,-0.925889355780588,,0,"Ego vehicle 13738 in lane 5, speed 18.3 m/s, acceleration -5.7 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 13879, directly ahead in your lane: gap 15.0 m, speed 0.0 m/s, braking (-0.9 m/s^2).
+- Vehicle 13747, behind you in your lane: gap 15.6 m, speed 17.6 m/s, braking (-2.7 m/s^2).
+- Vehicle 13722, ahead in your right adjacent lane: gap 12.6 m, speed 17.2 m/s, braking (-3.9 m/s^2).
+- Vehicle 13743, behind you in your right adjacent lane: gap 2.0 m, speed 18.4 m/s, braking (-2.7 m/s^2).
+Chosen action: Deceleration (Action ID 5).
+Result: UNSAFE - the ego would collide with vehicle 13879, which is directly ahead in your lane (gap 15.0 m, speed 0.0 m/s, acceleration -0.9 m/s^2), about 1.0 s after the decision.
+Safe actions in this situation: none - every action leads to a conflict within 2 s; the least bad is Deceleration (ID 5), whose conflict comes latest (1.0 s).
+Lesson: Moderate braking may not be enough when the gap ahead is very short; check whether a free adjacent lane gives more room."
+expresswayA_track_22_car_13747_frame_6927_to_7047,train,gpt4o,DEC,unneeded_brake,following,13770,0.6000000000000001,14.767694696006748,17.598722351118848,-2.7238285053364972,41.16480170974459,1.9442734757325884,IDLE;ACC,2,"Ego vehicle 13747 in lane 5, speed 17.6 m/s, acceleration -2.7 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 13738, directly ahead in your lane: gap 15.6 m, speed 18.3 m/s, braking (-5.7 m/s^2).
+- Vehicle 13770, behind you in your lane: gap 14.8 m, speed 41.2 m/s, accelerating (+1.9 m/s^2).
+- Vehicle 13743, ahead in your right adjacent lane: gap 8.1 m, speed 18.4 m/s, braking (-2.7 m/s^2).
+- Vehicle 13792, behind you in your right adjacent lane: gap 27.7 m, speed 17.3 m/s, steady speed (-0.4 m/s^2).
+Chosen action: Deceleration (Action ID 5).
+Result: UNSAFE - braking was not needed (a non-braking action was safe), and vehicle 13770, which is behind you in your lane (gap 14.8 m, speed 41.2 m/s, acceleration +1.9 m/s^2), would run into the ego about 0.6 s after braking.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Acceleration (ID 4).
+Lesson: Do not brake when keeping your speed (or accelerating) is already safe and a vehicle is following closely; unnecessary braking creates a rear-end conflict."
+expresswayA_track_22_car_13747_frame_6927_to_7047,train,gpt41,DEC,unneeded_brake,following,13770,0.6000000000000001,14.767694696006748,17.598722351118848,-2.7238285053364972,41.16480170974459,1.9442734757325884,IDLE;ACC,2,"Ego vehicle 13747 in lane 5, speed 17.6 m/s, acceleration -2.7 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 13738, directly ahead in your lane: gap 15.6 m, speed 18.3 m/s, braking (-5.7 m/s^2).
+- Vehicle 13770, behind you in your lane: gap 14.8 m, speed 41.2 m/s, accelerating (+1.9 m/s^2).
+- Vehicle 13743, ahead in your right adjacent lane: gap 8.1 m, speed 18.4 m/s, braking (-2.7 m/s^2).
+- Vehicle 13792, behind you in your right adjacent lane: gap 27.7 m, speed 17.3 m/s, steady speed (-0.4 m/s^2).
+Chosen action: Deceleration (Action ID 5).
+Result: UNSAFE - braking was not needed (a non-braking action was safe), and vehicle 13770, which is behind you in your lane (gap 14.8 m, speed 41.2 m/s, acceleration +1.9 m/s^2), would run into the ego about 0.6 s after braking.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Acceleration (ID 4).
+Lesson: Do not brake when keeping your speed (or accelerating) is already safe and a vehicle is following closely; unnecessary braking creates a rear-end conflict."
+expresswayA_track_26_car_1311_frame_6465_to_6576,test,gpt4o,DEC,collision,preceding,1307,1.7000000000000002,4.2157581909405675,12.566844222506385,-2.1111303388843274,13.516035945066289,-8.0,,0,"Ego vehicle 1311 in lane 6, speed 12.6 m/s, acceleration -2.1 m/s^2, heading 0 deg.
+Surrounding vehicles:
+- Vehicle 1307, directly ahead in your lane: gap 4.2 m, speed 13.5 m/s, braking (-8.0 m/s^2).
+- Vehicle 1314, behind you in your lane: gap 31.3 m, speed 28.5 m/s, braking (-1.0 m/s^2).
+- Vehicle 1302, ahead in your right adjacent lane: gap 16.8 m, speed 14.4 m/s, steady speed (+0.4 m/s^2).
+- Vehicle 1308, behind you in your right adjacent lane: gap 7.4 m, speed 14.8 m/s, accelerating (+1.2 m/s^2).
+Chosen action: Deceleration (Action ID 5).
+Result: UNSAFE - the ego would collide with vehicle 1307, which is directly ahead in your lane (gap 4.2 m, speed 13.5 m/s, acceleration -8.0 m/s^2), about 1.7 s after the decision.
+Safe actions in this situation: none - every action leads to a conflict within 2 s; the least bad is Deceleration (ID 5), whose conflict comes latest (1.7 s).
+Lesson: Moderate braking may not be enough when the gap ahead is very short; check whether a free adjacent lane gives more room."
+expresswayA_track_26_car_1311_frame_6465_to_6576,test,gpt41,DEC,collision,preceding,1307,1.7000000000000002,4.2157581909405675,12.566844222506385,-2.1111303388843274,13.516035945066289,-8.0,,0,"Ego vehicle 1311 in lane 6, speed 12.6 m/s, acceleration -2.1 m/s^2, heading 0 deg.
+Surrounding vehicles:
+- Vehicle 1307, directly ahead in your lane: gap 4.2 m, speed 13.5 m/s, braking (-8.0 m/s^2).
+- Vehicle 1314, behind you in your lane: gap 31.3 m, speed 28.5 m/s, braking (-1.0 m/s^2).
+- Vehicle 1302, ahead in your right adjacent lane: gap 16.8 m, speed 14.4 m/s, steady speed (+0.4 m/s^2).
+- Vehicle 1308, behind you in your right adjacent lane: gap 7.4 m, speed 14.8 m/s, accelerating (+1.2 m/s^2).
+Chosen action: Deceleration (Action ID 5).
+Result: UNSAFE - the ego would collide with vehicle 1307, which is directly ahead in your lane (gap 4.2 m, speed 13.5 m/s, acceleration -8.0 m/s^2), about 1.7 s after the decision.
+Safe actions in this situation: none - every action leads to a conflict within 2 s; the least bad is Deceleration (ID 5), whose conflict comes latest (1.7 s).
+Lesson: Moderate braking may not be enough when the gap ahead is very short; check whether a free adjacent lane gives more room."
+expresswayA_track_26_car_255_frame_1072_to_1187,test,gpt4o,IDLE,collision,right_preceding,250,1.0,4.904062749616571,13.641869089421434,-0.7423317183990307,11.821791381296563,-6.261368973848879,,0,"Ego vehicle 255 in lane 7, speed 13.6 m/s, acceleration -0.7 m/s^2, heading 1 deg.
+Surrounding vehicles:
+- Vehicle 242, directly ahead in your lane: gap 33.6 m, speed 15.0 m/s, steady speed (+0.5 m/s^2).
+- Vehicle 262, behind you in your lane: gap 21.8 m, speed 35.4 m/s, steady speed, drifting left (-0.3 m/s^2).
+- Vehicle 249, ahead in your left adjacent lane: gap 13.7 m, speed 34.3 m/s, braking (-1.8 m/s^2).
+- Vehicle 257, alongside you in your left adjacent lane: side by side, speed 32.1 m/s, braking (-2.6 m/s^2).
+- Vehicle 273, behind you in your left adjacent lane: gap 37.5 m, speed 36.0 m/s, steady speed (-0.2 m/s^2).
+- Vehicle 250, ahead in your right adjacent lane: gap 4.9 m, speed 11.8 m/s, braking (-6.3 m/s^2).
+Chosen action: IDLE (keep lane and speed) (Action ID 1).
+Result: UNSAFE - the ego would collide with vehicle 250, which is ahead in your right adjacent lane (gap 4.9 m, speed 11.8 m/s, acceleration -6.3 m/s^2), about 1.0 s after the decision.
+Safe actions in this situation: none - every action leads to a conflict within 2 s; the least bad is Deceleration (ID 5), whose conflict comes latest (1.4 s).
+Lesson: The vehicle ahead in your right adjacent lane is moving into or overlapping your lane; staying beside it is not safe. Choose the speed change that opens a gap to it (see the safe actions) instead of IDLE (keep lane and speed)."
+expresswayA_track_26_car_255_frame_1072_to_1187,test,gpt41,IDLE,collision,right_preceding,250,1.0,4.904062749616571,13.641869089421434,-0.7423317183990307,11.821791381296563,-6.261368973848879,,0,"Ego vehicle 255 in lane 7, speed 13.6 m/s, acceleration -0.7 m/s^2, heading 1 deg.
+Surrounding vehicles:
+- Vehicle 242, directly ahead in your lane: gap 33.6 m, speed 15.0 m/s, steady speed (+0.5 m/s^2).
+- Vehicle 262, behind you in your lane: gap 21.8 m, speed 35.4 m/s, steady speed, drifting left (-0.3 m/s^2).
+- Vehicle 249, ahead in your left adjacent lane: gap 13.7 m, speed 34.3 m/s, braking (-1.8 m/s^2).
+- Vehicle 257, alongside you in your left adjacent lane: side by side, speed 32.1 m/s, braking (-2.6 m/s^2).
+- Vehicle 273, behind you in your left adjacent lane: gap 37.5 m, speed 36.0 m/s, steady speed (-0.2 m/s^2).
+- Vehicle 250, ahead in your right adjacent lane: gap 4.9 m, speed 11.8 m/s, braking (-6.3 m/s^2).
+Chosen action: IDLE (keep lane and speed) (Action ID 1).
+Result: UNSAFE - the ego would collide with vehicle 250, which is ahead in your right adjacent lane (gap 4.9 m, speed 11.8 m/s, acceleration -6.3 m/s^2), about 1.0 s after the decision.
+Safe actions in this situation: none - every action leads to a conflict within 2 s; the least bad is Deceleration (ID 5), whose conflict comes latest (1.4 s).
+Lesson: The vehicle ahead in your right adjacent lane is moving into or overlapping your lane; staying beside it is not safe. Choose the speed change that opens a gap to it (see the safe actions) instead of IDLE (keep lane and speed)."
+expresswayA_track_26_car_338_frame_1706_to_1843,test,gpt4o,DEC,collision,preceding,336,2.0,7.700853011840707,13.52603459604109,1.4430559131307423,12.710789134116254,-7.315373013736025,,0,"Ego vehicle 338 in lane 5, speed 13.5 m/s, acceleration +1.4 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 336, directly ahead in your lane: gap 7.7 m, speed 12.7 m/s, braking (-7.3 m/s^2).
+- Vehicle 361, behind you in your lane: gap 14.8 m, speed 30.5 m/s, braking (-1.4 m/s^2).
+- Vehicle 318, ahead in your right adjacent lane: gap 36.4 m, speed 12.7 m/s, braking (-0.6 m/s^2).
+- Vehicle 325, alongside you in your right adjacent lane: side by side, speed 12.6 m/s, accelerating (+0.7 m/s^2).
+- Vehicle 337, behind you in your right adjacent lane: gap 15.7 m, speed 27.6 m/s, steady speed (-0.5 m/s^2).
+Chosen action: Deceleration (Action ID 5).
+Result: UNSAFE - the ego would collide with vehicle 336, which is directly ahead in your lane (gap 7.7 m, speed 12.7 m/s, acceleration -7.3 m/s^2), about 2.0 s after the decision.
+Safe actions in this situation: none - every action leads to a conflict within 2 s; the least bad is Deceleration (ID 5), whose conflict comes latest (2.0 s).
+Lesson: Moderate braking may not be enough when the gap ahead is very short; check whether a free adjacent lane gives more room."
+expresswayA_track_26_car_338_frame_1706_to_1843,test,gpt41,DEC,collision,preceding,336,2.0,7.700853011840707,13.52603459604109,1.4430559131307423,12.710789134116254,-7.315373013736025,,0,"Ego vehicle 338 in lane 5, speed 13.5 m/s, acceleration +1.4 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 336, directly ahead in your lane: gap 7.7 m, speed 12.7 m/s, braking (-7.3 m/s^2).
+- Vehicle 361, behind you in your lane: gap 14.8 m, speed 30.5 m/s, braking (-1.4 m/s^2).
+- Vehicle 318, ahead in your right adjacent lane: gap 36.4 m, speed 12.7 m/s, braking (-0.6 m/s^2).
+- Vehicle 325, alongside you in your right adjacent lane: side by side, speed 12.6 m/s, accelerating (+0.7 m/s^2).
+- Vehicle 337, behind you in your right adjacent lane: gap 15.7 m, speed 27.6 m/s, steady speed (-0.5 m/s^2).
+Chosen action: Deceleration (Action ID 5).
+Result: UNSAFE - the ego would collide with vehicle 336, which is directly ahead in your lane (gap 7.7 m, speed 12.7 m/s, acceleration -7.3 m/s^2), about 2.0 s after the decision.
+Safe actions in this situation: none - every action leads to a conflict within 2 s; the least bad is Deceleration (ID 5), whose conflict comes latest (2.0 s).
+Lesson: Moderate braking may not be enough when the gap ahead is very short; check whether a free adjacent lane gives more room."
+expresswayA_track_29_car_4720_frame_790_to_914,train,gpt4o,DEC,unneeded_brake,following,4718,0.8,15.200768502550844,23.025533784440693,-1.5052012067595721,38.03941890725951,8.0,IDLE;ACC,2,"Ego vehicle 4720 in lane 7, speed 23.0 m/s, acceleration -1.5 m/s^2, heading 0 deg.
+Surrounding vehicles:
+- Vehicle 4703, directly ahead in your lane: gap 30.0 m, speed 19.8 m/s, braking (-5.6 m/s^2).
+- Vehicle 4718, behind you in your lane: gap 15.2 m, speed 38.0 m/s, accelerating (+8.0 m/s^2).
+- Vehicle 4697, ahead in your left adjacent lane: gap 9.1 m, speed 16.0 m/s, braking (-8.0 m/s^2).
+- Vehicle 4733, behind you in your left adjacent lane: gap 36.6 m, speed 21.4 m/s, braking (-8.0 m/s^2).
+- Vehicle 4674, ahead in your right adjacent lane: gap 36.6 m, speed 7.0 m/s, steady speed, drifting right (-0.2 m/s^2).
+- Vehicle 4707, behind you in your right adjacent lane: gap 24.1 m, speed 14.1 m/s, steady speed (-0.0 m/s^2).
+Chosen action: Deceleration (Action ID 5).
+Result: UNSAFE - braking was not needed (a non-braking action was safe), and vehicle 4718, which is behind you in your lane (gap 15.2 m, speed 38.0 m/s, acceleration +8.0 m/s^2), would run into the ego about 0.8 s after braking.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Acceleration (ID 4).
+Lesson: Do not brake when keeping your speed (or accelerating) is already safe and a vehicle is following closely; unnecessary braking creates a rear-end conflict."
+expresswayA_track_29_car_4720_frame_790_to_914,train,gpt41,DEC,unneeded_brake,following,4718,0.8,15.200768502550844,23.025533784440693,-1.5052012067595721,38.03941890725951,8.0,IDLE;ACC,2,"Ego vehicle 4720 in lane 7, speed 23.0 m/s, acceleration -1.5 m/s^2, heading 0 deg.
+Surrounding vehicles:
+- Vehicle 4703, directly ahead in your lane: gap 30.0 m, speed 19.8 m/s, braking (-5.6 m/s^2).
+- Vehicle 4718, behind you in your lane: gap 15.2 m, speed 38.0 m/s, accelerating (+8.0 m/s^2).
+- Vehicle 4697, ahead in your left adjacent lane: gap 9.1 m, speed 16.0 m/s, braking (-8.0 m/s^2).
+- Vehicle 4733, behind you in your left adjacent lane: gap 36.6 m, speed 21.4 m/s, braking (-8.0 m/s^2).
+- Vehicle 4674, ahead in your right adjacent lane: gap 36.6 m, speed 7.0 m/s, steady speed, drifting right (-0.2 m/s^2).
+- Vehicle 4707, behind you in your right adjacent lane: gap 24.1 m, speed 14.1 m/s, steady speed (-0.0 m/s^2).
+Chosen action: Deceleration (Action ID 5).
+Result: UNSAFE - braking was not needed (a non-braking action was safe), and vehicle 4718, which is behind you in your lane (gap 15.2 m, speed 38.0 m/s, acceleration +8.0 m/s^2), would run into the ego about 0.8 s after braking.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Acceleration (ID 4).
+Lesson: Do not brake when keeping your speed (or accelerating) is already safe and a vehicle is following closely; unnecessary braking creates a rear-end conflict."
+expresswayA_track_3_car_3850_frame_7209_to_7305,train,gpt4o,ACC,collision,right_preceding,3829,2.0,9.653080032296465,5.579382058516234,0.03080357377410928,4.231043876269439,-1.4942797275244064,IDLE;LEFT;RIGHT;DEC,4,"Ego vehicle 3850 in lane 8, speed 5.6 m/s, acceleration +0.0 m/s^2, heading 360 deg.
+Surrounding vehicles:
+- Vehicle 3800, directly ahead in your lane: gap 21.5 m, speed 11.7 m/s, braking (-1.9 m/s^2).
+- Vehicle 3886, behind you in your lane: gap 47.2 m, speed 10.3 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 3887, ahead in your left adjacent lane: gap 28.1 m, speed 43.9 m/s, braking (-3.8 m/s^2).
+- Vehicle 3901, behind you in your left adjacent lane: gap 8.0 m, speed 43.0 m/s, steady speed (+0.2 m/s^2).
+- Vehicle 3829, ahead in your right adjacent lane: gap 9.7 m, speed 4.2 m/s, braking (-1.5 m/s^2).
+- Vehicle 3856, behind you in your right adjacent lane: gap 3.8 m, speed 4.1 m/s, braking (-5.9 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 3829, which is ahead in your right adjacent lane (gap 9.7 m, speed 4.2 m/s, acceleration -1.5 m/s^2), about 2.0 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Left (ID 2), Turn Right (ID 3), Deceleration (ID 5).
+Lesson: The vehicle ahead in your right adjacent lane is moving into or overlapping your lane; staying beside it is not safe. Choose the speed change that opens a gap to it (see the safe actions) instead of Acceleration."
+expresswayA_track_6_car_139_frame_961_to_1068,test,gpt4o,LEFT,collision,preceding,134,0.8,2.1518757696765496,2.76707508585003,5.934117292042003,0.0,0.0,DEC,1,"Ego vehicle 139 in lane 10, speed 2.8 m/s, acceleration +5.9 m/s^2, heading 0 deg.
+Surrounding vehicles:
+- Vehicle 134, directly ahead in your lane: gap 2.2 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 133, ahead in your left adjacent lane: gap 16.1 m, speed 2.6 m/s, steady speed (+0.3 m/s^2).
+- Vehicle 149, behind you in your left adjacent lane: gap 21.1 m, speed 7.9 m/s, accelerating (+0.6 m/s^2).
+Chosen action: Turn Left (Action ID 2).
+Result: UNSAFE - the ego would collide with vehicle 134, which is directly ahead in your lane (gap 2.2 m, speed 0.0 m/s, acceleration +0.0 m/s^2), about 0.8 s after the decision.
+Safe actions in this situation: Deceleration (ID 5).
+Lesson: This lane change is too slow to escape a vehicle that is already very close ahead in your lane; you would hit it before leaving the lane."
+expresswayA_track_6_car_633_frame_5134_to_5250,test,gpt4o,RIGHT,collision,following,654,1.2000000000000002,19.73433948168148,14.420915722046097,0.5686905245358471,30.51836002660223,1.9278113858915462,IDLE;ACC;DEC,3,"Ego vehicle 633 in lane 4, speed 14.4 m/s, acceleration +0.6 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 626, directly ahead in your lane: gap 35.2 m, speed 14.9 m/s, braking (-0.6 m/s^2).
+- Vehicle 654, behind you in your lane: gap 19.7 m, speed 30.5 m/s, accelerating (+1.9 m/s^2).
+- Vehicle 629, ahead in your left adjacent lane: gap 27.6 m, speed 14.6 m/s, accelerating (+6.2 m/s^2).
+- Vehicle 648, behind you in your left adjacent lane: gap 5.1 m, speed 14.0 m/s, accelerating (+0.6 m/s^2).
+- Vehicle 630, ahead in your right adjacent lane: gap 18.8 m, speed 33.1 m/s, accelerating (+1.0 m/s^2).
+- Vehicle 642, alongside you in your right adjacent lane: side by side, speed 32.8 m/s, accelerating (+5.3 m/s^2).
+- Vehicle 653, behind you in your right adjacent lane: gap 22.2 m, speed 31.5 m/s, accelerating (+1.7 m/s^2).
+Chosen action: Turn Right (Action ID 3).
+Result: UNSAFE - the ego would collide with vehicle 654, which is behind you in your lane (gap 19.7 m, speed 30.5 m/s, acceleration +1.9 m/s^2), about 1.2 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Acceleration (ID 4), Deceleration (ID 5).
+Lesson: Do not start a lane change while a faster vehicle right behind you is about to reach you; you stay in its path during the manoeuvre."
+expresswayA_track_8_car_2598_frame_5068_to_5162,train,gpt4o,ACC,collision,preceding,2583,1.3,1.6183149873867047,0.0,-0.7073801477571534,1.0791367799356522e-14,-1.0329345687193182e-29,IDLE;LEFT;DEC,3,"Ego vehicle 2598 in lane 3, speed 0.0 m/s, acceleration -0.7 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 2583, directly ahead in your lane: gap 1.6 m, speed 0.0 m/s, steady speed (-0.0 m/s^2).
+- Vehicle 2608, behind you in your lane: gap 1.1 m, speed 0.6 m/s, braking (-4.7 m/s^2).
+- Vehicle 2560, ahead in your left adjacent lane: gap 7.6 m, speed 1.5 m/s, accelerating (+0.6 m/s^2).
+- Vehicle 2563, alongside you in your left adjacent lane: side by side, speed 3.0 m/s, steady speed (-0.5 m/s^2).
+- Vehicle 2593, behind you in your left adjacent lane: gap 7.8 m, speed 3.5 m/s, braking (-1.0 m/s^2).
+- Vehicle 2617, ahead in your right adjacent lane: gap 9.8 m, speed 11.4 m/s, steady speed (+0.3 m/s^2).
+- Vehicle 2638, behind you in your right adjacent lane: gap 0.4 m, speed 8.0 m/s, braking (-0.8 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 2583, which is directly ahead in your lane (gap 1.6 m, speed 0.0 m/s, acceleration -0.0 m/s^2), about 1.3 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Left (ID 2), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+expresswayA_track_8_car_2598_frame_5068_to_5162,train,gpt41,ACC,collision,preceding,2583,1.3,1.6183149873867047,0.0,-0.7073801477571534,1.0791367799356522e-14,-1.0329345687193182e-29,IDLE;LEFT;DEC,3,"Ego vehicle 2598 in lane 3, speed 0.0 m/s, acceleration -0.7 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 2583, directly ahead in your lane: gap 1.6 m, speed 0.0 m/s, steady speed (-0.0 m/s^2).
+- Vehicle 2608, behind you in your lane: gap 1.1 m, speed 0.6 m/s, braking (-4.7 m/s^2).
+- Vehicle 2560, ahead in your left adjacent lane: gap 7.6 m, speed 1.5 m/s, accelerating (+0.6 m/s^2).
+- Vehicle 2563, alongside you in your left adjacent lane: side by side, speed 3.0 m/s, steady speed (-0.5 m/s^2).
+- Vehicle 2593, behind you in your left adjacent lane: gap 7.8 m, speed 3.5 m/s, braking (-1.0 m/s^2).
+- Vehicle 2617, ahead in your right adjacent lane: gap 9.8 m, speed 11.4 m/s, steady speed (+0.3 m/s^2).
+- Vehicle 2638, behind you in your right adjacent lane: gap 0.4 m, speed 8.0 m/s, braking (-0.8 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 2583, which is directly ahead in your lane (gap 1.6 m, speed 0.0 m/s, acceleration -0.0 m/s^2), about 1.3 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Left (ID 2), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+expresswayA_track_8_car_2608_frame_5068_to_5162,train,gpt4o,ACC,collision,preceding,2598,0.8,1.1217694439024672,0.6042634604938213,-4.658289832325657,0.0,-0.7073801477571534,DEC,1,"Ego vehicle 2608 in lane 3, speed 0.6 m/s, acceleration -4.7 m/s^2, heading 179 deg.
+Surrounding vehicles:
+- Vehicle 2598, directly ahead in your lane: gap 1.1 m, speed 0.0 m/s, braking (-0.7 m/s^2).
+- Vehicle 2645, behind you in your lane: gap 3.6 m, speed 3.7 m/s, braking (-2.5 m/s^2).
+- Vehicle 2560, ahead in your left adjacent lane: gap 13.7 m, speed 1.5 m/s, accelerating (+0.6 m/s^2).
+- Vehicle 2563, alongside you in your left adjacent lane: side by side, speed 3.0 m/s, steady speed (-0.5 m/s^2).
+- Vehicle 2593, behind you in your left adjacent lane: gap 2.7 m, speed 3.5 m/s, braking (-1.0 m/s^2).
+- Vehicle 2617, ahead in your right adjacent lane: gap 15.8 m, speed 11.4 m/s, steady speed (+0.3 m/s^2).
+- Vehicle 2638, alongside you in your right adjacent lane: side by side, speed 8.0 m/s, braking (-0.8 m/s^2).
+- Vehicle 2671, behind you in your right adjacent lane: gap 14.0 m, speed 11.3 m/s, steady speed (-0.5 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 2598, which is directly ahead in your lane (gap 1.1 m, speed 0.0 m/s, acceleration -0.7 m/s^2), about 0.8 s after the decision.
+Safe actions in this situation: Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+expresswayA_track_8_car_2608_frame_5068_to_5162,train,gpt41,ACC,collision,preceding,2598,0.8,1.1217694439024672,0.6042634604938213,-4.658289832325657,0.0,-0.7073801477571534,DEC,1,"Ego vehicle 2608 in lane 3, speed 0.6 m/s, acceleration -4.7 m/s^2, heading 179 deg.
+Surrounding vehicles:
+- Vehicle 2598, directly ahead in your lane: gap 1.1 m, speed 0.0 m/s, braking (-0.7 m/s^2).
+- Vehicle 2645, behind you in your lane: gap 3.6 m, speed 3.7 m/s, braking (-2.5 m/s^2).
+- Vehicle 2560, ahead in your left adjacent lane: gap 13.7 m, speed 1.5 m/s, accelerating (+0.6 m/s^2).
+- Vehicle 2563, alongside you in your left adjacent lane: side by side, speed 3.0 m/s, steady speed (-0.5 m/s^2).
+- Vehicle 2593, behind you in your left adjacent lane: gap 2.7 m, speed 3.5 m/s, braking (-1.0 m/s^2).
+- Vehicle 2617, ahead in your right adjacent lane: gap 15.8 m, speed 11.4 m/s, steady speed (+0.3 m/s^2).
+- Vehicle 2638, alongside you in your right adjacent lane: side by side, speed 8.0 m/s, braking (-0.8 m/s^2).
+- Vehicle 2671, behind you in your right adjacent lane: gap 14.0 m, speed 11.3 m/s, steady speed (-0.5 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 2598, which is directly ahead in your lane (gap 1.1 m, speed 0.0 m/s, acceleration -0.7 m/s^2), about 0.8 s after the decision.
+Safe actions in this situation: Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+expresswayA_track_8_car_2645_frame_5068_to_5247,train,gpt4o,ACC,collision,preceding,2608,1.1,1.1723425893149635,0.0,0.0,9.547918011776346e-15,-6.843593073410555e-30,IDLE;DEC,2,"Ego vehicle 2645 in lane 3, speed 0.0 m/s, acceleration +0.0 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 2608, directly ahead in your lane: gap 1.2 m, speed 0.0 m/s, steady speed (-0.0 m/s^2).
+- Vehicle 2655, behind you in your lane: gap 2.3 m, speed 0.3 m/s, braking (-4.4 m/s^2).
+- Vehicle 2593, ahead in your left adjacent lane: gap 1.0 m, speed 1.8 m/s, braking (-1.3 m/s^2).
+- Vehicle 2601, behind you in your left adjacent lane: gap 0.6 m, speed 2.7 m/s, braking (-0.8 m/s^2).
+- Vehicle 2671, ahead in your right adjacent lane: gap 9.5 m, speed 8.9 m/s, steady speed (-0.2 m/s^2).
+- Vehicle 2685, behind you in your right adjacent lane: gap 20.9 m, speed 13.5 m/s, braking (-1.3 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 2608, which is directly ahead in your lane (gap 1.2 m, speed 0.0 m/s, acceleration -0.0 m/s^2), about 1.1 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+expresswayA_track_8_car_2645_frame_5068_to_5247,train,gpt41,ACC,collision,preceding,2608,1.1,1.1723425893149635,0.0,0.0,9.547918011776346e-15,-6.843593073410555e-30,IDLE;DEC,2,"Ego vehicle 2645 in lane 3, speed 0.0 m/s, acceleration +0.0 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 2608, directly ahead in your lane: gap 1.2 m, speed 0.0 m/s, steady speed (-0.0 m/s^2).
+- Vehicle 2655, behind you in your lane: gap 2.3 m, speed 0.3 m/s, braking (-4.4 m/s^2).
+- Vehicle 2593, ahead in your left adjacent lane: gap 1.0 m, speed 1.8 m/s, braking (-1.3 m/s^2).
+- Vehicle 2601, behind you in your left adjacent lane: gap 0.6 m, speed 2.7 m/s, braking (-0.8 m/s^2).
+- Vehicle 2671, ahead in your right adjacent lane: gap 9.5 m, speed 8.9 m/s, steady speed (-0.2 m/s^2).
+- Vehicle 2685, behind you in your right adjacent lane: gap 20.9 m, speed 13.5 m/s, braking (-1.3 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 2608, which is directly ahead in your lane (gap 1.2 m, speed 0.0 m/s, acceleration -0.0 m/s^2), about 1.1 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+expresswayA_track_8_car_2646_frame_7484_to_7575,train,gpt4o,ACC,collision,preceding,2735,1.3,1.6747751275928087,0.0,-4.93670020775137,1.0442448683534163e-14,-3.9201514907861104e-30,IDLE;LEFT;DEC,3,"Ego vehicle 2646 in lane 4, speed 0.0 m/s, acceleration -4.9 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 2735, directly ahead in your lane: gap 1.7 m, speed 0.0 m/s, steady speed (-0.0 m/s^2).
+- Vehicle 2797, behind you in your lane: gap 2.7 m, speed 2.2 m/s, braking (-0.9 m/s^2).
+- Vehicle 2604, ahead in your left adjacent lane: gap 1.4 m, speed 2.0 m/s, braking (-0.7 m/s^2).
+- Vehicle 2639, alongside you in your left adjacent lane: side by side, speed 2.5 m/s, braking (-0.8 m/s^2).
+- Vehicle 2668, behind you in your left adjacent lane: gap 8.4 m, speed 3.2 m/s, braking (-1.4 m/s^2).
+- Vehicle 2778, ahead in your right adjacent lane: gap 1.6 m, speed 2.9 m/s, steady speed (+0.4 m/s^2).
+- Vehicle 2843, alongside you in your right adjacent lane: side by side, speed 2.7 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 2845, behind you in your right adjacent lane: gap 4.0 m, speed 2.2 m/s, accelerating (+0.5 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 2735, which is directly ahead in your lane (gap 1.7 m, speed 0.0 m/s, acceleration -0.0 m/s^2), about 1.3 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Left (ID 2), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+expresswayA_track_8_car_2646_frame_7484_to_7575,train,gpt41,ACC,collision,preceding,2735,1.3,1.6747751275928087,0.0,-4.93670020775137,1.0442448683534163e-14,-3.9201514907861104e-30,IDLE;LEFT;DEC,3,"Ego vehicle 2646 in lane 4, speed 0.0 m/s, acceleration -4.9 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 2735, directly ahead in your lane: gap 1.7 m, speed 0.0 m/s, steady speed (-0.0 m/s^2).
+- Vehicle 2797, behind you in your lane: gap 2.7 m, speed 2.2 m/s, braking (-0.9 m/s^2).
+- Vehicle 2604, ahead in your left adjacent lane: gap 1.4 m, speed 2.0 m/s, braking (-0.7 m/s^2).
+- Vehicle 2639, alongside you in your left adjacent lane: side by side, speed 2.5 m/s, braking (-0.8 m/s^2).
+- Vehicle 2668, behind you in your left adjacent lane: gap 8.4 m, speed 3.2 m/s, braking (-1.4 m/s^2).
+- Vehicle 2778, ahead in your right adjacent lane: gap 1.6 m, speed 2.9 m/s, steady speed (+0.4 m/s^2).
+- Vehicle 2843, alongside you in your right adjacent lane: side by side, speed 2.7 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 2845, behind you in your right adjacent lane: gap 4.0 m, speed 2.2 m/s, accelerating (+0.5 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 2735, which is directly ahead in your lane (gap 1.7 m, speed 0.0 m/s, acceleration -0.0 m/s^2), about 1.3 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Left (ID 2), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+expresswayA_track_8_car_2677_frame_6765_to_6868,train,gpt4o,ACC,collision,preceding,2668,1.8,3.1814002395791317,0.0,-3.7501750475283404,0.0,-6.596203851916403,IDLE;RIGHT;DEC,3,"Ego vehicle 2677 in lane 5, speed 0.0 m/s, acceleration -3.8 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 2668, directly ahead in your lane: gap 3.2 m, speed 0.0 m/s, braking (-6.6 m/s^2).
+- Vehicle 2695, behind you in your lane: gap 3.1 m, speed 2.0 m/s, braking (-6.1 m/s^2).
+- Vehicle 2721, ahead in your right adjacent lane: gap 0.9 m, speed 5.2 m/s, braking (-0.8 m/s^2).
+- Vehicle 2735, behind you in your right adjacent lane: gap 2.8 m, speed 5.2 m/s, braking (-0.8 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 2668, which is directly ahead in your lane (gap 3.2 m, speed 0.0 m/s, acceleration -6.6 m/s^2), about 1.8 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Right (ID 3), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+expresswayA_track_8_car_2677_frame_6765_to_6868,train,gpt41,ACC,collision,preceding,2668,1.8,3.1814002395791317,0.0,-3.7501750475283404,0.0,-6.596203851916403,IDLE;RIGHT;DEC,3,"Ego vehicle 2677 in lane 5, speed 0.0 m/s, acceleration -3.8 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 2668, directly ahead in your lane: gap 3.2 m, speed 0.0 m/s, braking (-6.6 m/s^2).
+- Vehicle 2695, behind you in your lane: gap 3.1 m, speed 2.0 m/s, braking (-6.1 m/s^2).
+- Vehicle 2721, ahead in your right adjacent lane: gap 0.9 m, speed 5.2 m/s, braking (-0.8 m/s^2).
+- Vehicle 2735, behind you in your right adjacent lane: gap 2.8 m, speed 5.2 m/s, braking (-0.8 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 2668, which is directly ahead in your lane (gap 3.2 m, speed 0.0 m/s, acceleration -6.6 m/s^2), about 1.8 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Right (ID 3), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+expresswayA_track_8_car_2691_frame_5326_to_5416,train,gpt41,ACC,collision,preceding,2683,1.3,1.8143397215588752,0.0899100000823516,-4.835049984949238,8.159403819263387e-15,2.906594126461916e-30,IDLE;RIGHT;DEC,3,"Ego vehicle 2691 in lane 3, speed 0.1 m/s, acceleration -4.8 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 2683, directly ahead in your lane: gap 1.8 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 2698, behind you in your lane: gap 4.0 m, speed 2.7 m/s, braking (-1.1 m/s^2).
+- Vehicle 2670, ahead in your left adjacent lane: gap 7.8 m, speed 1.5 m/s, steady speed (+0.2 m/s^2).
+- Vehicle 2680, alongside you in your left adjacent lane: side by side, speed 1.7 m/s, braking (-0.5 m/s^2).
+- Vehicle 2700, behind you in your left adjacent lane: gap 9.3 m, speed 6.7 m/s, braking (-2.3 m/s^2).
+- Vehicle 2694, ahead in your right adjacent lane: gap 27.3 m, speed 5.6 m/s, braking (-2.2 m/s^2).
+- Vehicle 2702, alongside you in your right adjacent lane: side by side, speed 7.2 m/s, steady speed (+0.2 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 2683, which is directly ahead in your lane (gap 1.8 m, speed 0.0 m/s, acceleration +0.0 m/s^2), about 1.3 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Right (ID 3), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+expresswayA_track_8_car_2753_frame_7036_to_7130,train,gpt4o,ACC,collision,preceding,2733,1.2000000000000002,1.5608865875761273,3.7918397310932056e-15,-1.3533038506288257,0.0,0.0,IDLE;DEC,2,"Ego vehicle 2753 in lane 5, speed 0.0 m/s, acceleration -1.4 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 2733, directly ahead in your lane: gap 1.6 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 2764, behind you in your lane: gap 2.0 m, speed 0.5 m/s, braking (-4.6 m/s^2).
+- Vehicle 2820, ahead in your right adjacent lane: gap 4.6 m, speed 4.5 m/s, braking (-0.8 m/s^2).
+- Vehicle 2832, behind you in your right adjacent lane: gap 5.0 m, speed 4.5 m/s, steady speed (+0.1 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 2733, which is directly ahead in your lane (gap 1.6 m, speed 0.0 m/s, acceleration +0.0 m/s^2), about 1.2 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+expresswayA_track_8_car_2753_frame_7036_to_7130,train,gpt41,ACC,collision,preceding,2733,1.2000000000000002,1.5608865875761273,3.7918397310932056e-15,-1.3533038506288257,0.0,0.0,IDLE;DEC,2,"Ego vehicle 2753 in lane 5, speed 0.0 m/s, acceleration -1.4 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 2733, directly ahead in your lane: gap 1.6 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 2764, behind you in your lane: gap 2.0 m, speed 0.5 m/s, braking (-4.6 m/s^2).
+- Vehicle 2820, ahead in your right adjacent lane: gap 4.6 m, speed 4.5 m/s, braking (-0.8 m/s^2).
+- Vehicle 2832, behind you in your right adjacent lane: gap 5.0 m, speed 4.5 m/s, steady speed (+0.1 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 2733, which is directly ahead in your lane (gap 1.6 m, speed 0.0 m/s, acceleration +0.0 m/s^2), about 1.2 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+expresswayA_track_8_car_2764_frame_7036_to_7130,train,gpt4o,ACC,collision,preceding,2753,1.2000000000000002,2.038796972565529,0.5427797858008139,-4.646228791474749,3.7918397310932056e-15,-1.3533038506288257,IDLE;DEC,2,"Ego vehicle 2764 in lane 5, speed 0.5 m/s, acceleration -4.6 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 2753, directly ahead in your lane: gap 2.0 m, speed 0.0 m/s, braking (-1.4 m/s^2).
+- Vehicle 2779, behind you in your lane: gap 2.8 m, speed 2.8 m/s, steady speed (+0.1 m/s^2).
+- Vehicle 2820, ahead in your right adjacent lane: gap 11.2 m, speed 4.5 m/s, braking (-0.8 m/s^2).
+- Vehicle 2832, alongside you in your right adjacent lane: side by side, speed 4.5 m/s, steady speed (+0.1 m/s^2).
+- Vehicle 2874, behind you in your right adjacent lane: gap 28.5 m, speed 5.0 m/s, accelerating (+1.1 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 2753, which is directly ahead in your lane (gap 2.0 m, speed 0.0 m/s, acceleration -1.4 m/s^2), about 1.2 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+expresswayA_track_8_car_2764_frame_7036_to_7130,train,gpt41,ACC,collision,preceding,2753,1.2000000000000002,2.038796972565529,0.5427797858008139,-4.646228791474749,3.7918397310932056e-15,-1.3533038506288257,IDLE;DEC,2,"Ego vehicle 2764 in lane 5, speed 0.5 m/s, acceleration -4.6 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 2753, directly ahead in your lane: gap 2.0 m, speed 0.0 m/s, braking (-1.4 m/s^2).
+- Vehicle 2779, behind you in your lane: gap 2.8 m, speed 2.8 m/s, steady speed (+0.1 m/s^2).
+- Vehicle 2820, ahead in your right adjacent lane: gap 11.2 m, speed 4.5 m/s, braking (-0.8 m/s^2).
+- Vehicle 2832, alongside you in your right adjacent lane: side by side, speed 4.5 m/s, steady speed (+0.1 m/s^2).
+- Vehicle 2874, behind you in your right adjacent lane: gap 28.5 m, speed 5.0 m/s, accelerating (+1.1 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 2753, which is directly ahead in your lane (gap 2.0 m, speed 0.0 m/s, acceleration -1.4 m/s^2), about 1.2 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+expresswayA_track_8_car_3552_frame_8795_to_8928,train,gpt41,ACC,collision,preceding,3538,1.8,3.2144530268746223,1.290416662413918e-15,8.379785830667027e-31,0.0,0.0,IDLE;DEC,2,"Ego vehicle 3552 in lane 5, speed 0.0 m/s, acceleration +0.0 m/s^2, heading 179 deg.
+Surrounding vehicles:
+- Vehicle 3538, directly ahead in your lane: gap 3.2 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 3554, behind you in your lane: gap 1.6 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 3551, ahead in your right adjacent lane: gap 8.2 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 3562, alongside you in your right adjacent lane: side by side, speed 0.2 m/s, braking (-5.4 m/s^2).
+- Vehicle 3568, behind you in your right adjacent lane: gap 1.1 m, speed 3.2 m/s, braking (-2.8 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 3538, which is directly ahead in your lane (gap 3.2 m, speed 0.0 m/s, acceleration +0.0 m/s^2), about 1.8 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+expresswayA_track_9_car_3488_frame_982_to_1075,test,gpt4o,ACC,collision,preceding,3481,2.0,3.434618620711965,1.4095320466367413e-15,-0.5728304987859951,1.8324203673355648,-3.067180691409819,IDLE;DEC,2,"Ego vehicle 3488 in lane 5, speed 0.0 m/s, acceleration -0.6 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 3481, directly ahead in your lane: gap 3.4 m, speed 1.8 m/s, braking (-3.1 m/s^2).
+- Vehicle 3497, behind you in your lane: gap 2.1 m, speed 0.1 m/s, braking (-4.4 m/s^2).
+- Vehicle 3516, ahead in your right adjacent lane: gap 1.9 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 3543, alongside you in your right adjacent lane: side by side, speed 0.0 m/s, steady speed (-0.1 m/s^2).
+- Vehicle 3551, behind you in your right adjacent lane: gap 8.5 m, speed 4.2 m/s, braking (-2.0 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 3481, which is directly ahead in your lane (gap 3.4 m, speed 1.8 m/s, acceleration -3.1 m/s^2), about 2.0 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+expresswayA_track_9_car_3488_frame_982_to_1075,test,gpt41,ACC,collision,preceding,3481,2.0,3.434618620711965,1.4095320466367413e-15,-0.5728304987859951,1.8324203673355648,-3.067180691409819,IDLE;DEC,2,"Ego vehicle 3488 in lane 5, speed 0.0 m/s, acceleration -0.6 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 3481, directly ahead in your lane: gap 3.4 m, speed 1.8 m/s, braking (-3.1 m/s^2).
+- Vehicle 3497, behind you in your lane: gap 2.1 m, speed 0.1 m/s, braking (-4.4 m/s^2).
+- Vehicle 3516, ahead in your right adjacent lane: gap 1.9 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 3543, alongside you in your right adjacent lane: side by side, speed 0.0 m/s, steady speed (-0.1 m/s^2).
+- Vehicle 3551, behind you in your right adjacent lane: gap 8.5 m, speed 4.2 m/s, braking (-2.0 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 3481, which is directly ahead in your lane (gap 3.4 m, speed 1.8 m/s, acceleration -3.1 m/s^2), about 2.0 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+expresswayA_track_9_car_3551_frame_982_to_1075,test,gpt4o,RIGHT,collision,following,3562,0.9,9.834138180497472,4.177148480527618,-1.962479638060386,15.501031062656782,-0.4030428515105848,DEC,1,"Ego vehicle 3551 in lane 4, speed 4.2 m/s, acceleration -2.0 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 3543, directly ahead in your lane: gap 7.0 m, speed 0.0 m/s, steady speed (-0.1 m/s^2).
+- Vehicle 3562, behind you in your lane: gap 9.8 m, speed 15.5 m/s, steady speed, drifting right (-0.4 m/s^2).
+- Vehicle 3497, ahead in your left adjacent lane: gap 2.0 m, speed 0.1 m/s, braking (-4.4 m/s^2).
+- Vehicle 3511, behind you in your left adjacent lane: gap 0.6 m, speed 1.4 m/s, braking (-2.0 m/s^2).
+- Vehicle 3661, ahead in your right adjacent lane: gap 37.5 m, speed 18.0 m/s, braking (-0.9 m/s^2).
+- Vehicle 3695, alongside you in your right adjacent lane: side by side, speed 23.6 m/s, steady speed (-0.1 m/s^2).
+- Vehicle 3724, behind you in your right adjacent lane: gap 60.4 m, speed 13.4 m/s, steady speed (+0.1 m/s^2).
+Chosen action: Turn Right (Action ID 3).
+Result: UNSAFE - the ego would collide with vehicle 3562, which is behind you in your lane (gap 9.8 m, speed 15.5 m/s, acceleration -0.4 m/s^2), about 0.9 s after the decision.
+Safe actions in this situation: Deceleration (ID 5).
+Lesson: Do not start a lane change while a faster vehicle right behind you is about to reach you; you stay in its path during the manoeuvre."
+expresswayA_track_9_car_3757_frame_2138_to_2228,test,gpt41,ACC,collision,preceding,3742,1.6,2.5121626913891895,0.0,0.0,0.0,0.0,IDLE;RIGHT;DEC,3,"Ego vehicle 3757 in lane 4, speed 0.0 m/s, acceleration +0.0 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 3742, directly ahead in your lane: gap 2.5 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 3806, behind you in your lane: gap 3.7 m, speed 0.0 m/s, braking (-4.7 m/s^2).
+- Vehicle 3530, ahead in your left adjacent lane: gap 6.9 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 3538, alongside you in your left adjacent lane: side by side, speed 0.5 m/s, braking (-1.8 m/s^2).
+- Vehicle 3554, behind you in your left adjacent lane: gap 0.5 m, speed 1.5 m/s, accelerating (+0.8 m/s^2).
+- Vehicle 3859, ahead in your right adjacent lane: gap 1.0 m, speed 9.1 m/s, steady speed (+0.1 m/s^2).
+- Vehicle 3889, behind you in your right adjacent lane: gap 9.7 m, speed 7.9 m/s, braking (-1.2 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 3742, which is directly ahead in your lane (gap 2.5 m, speed 0.0 m/s, acceleration +0.0 m/s^2), about 1.6 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Right (ID 3), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+expresswayA_track_9_car_3806_frame_4166_to_4258,test,gpt4o,ACC,collision,preceding,3757,1.5,2.3173308379278277,0.1198799995568344,-4.856054740032059,4.228596139910224e-15,-5.646546710229189e-31,IDLE;DEC,2,"Ego vehicle 3806 in lane 4, speed 0.1 m/s, acceleration -4.9 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 3757, directly ahead in your lane: gap 2.3 m, speed 0.0 m/s, steady speed (-0.0 m/s^2).
+- Vehicle 3825, behind you in your lane: gap 7.1 m, speed 4.1 m/s, braking (-0.9 m/s^2).
+- Vehicle 3554, ahead in your left adjacent lane: gap 3.1 m, speed 0.6 m/s, braking (-1.0 m/s^2).
+- Vehicle 3566, alongside you in your left adjacent lane: side by side, speed 1.9 m/s, braking (-1.3 m/s^2).
+- Vehicle 3786, behind you in your left adjacent lane: gap 5.7 m, speed 2.1 m/s, braking (-0.5 m/s^2).
+- Vehicle 3994, ahead in your right adjacent lane: gap 4.9 m, speed 4.7 m/s, braking (-0.5 m/s^2).
+- Vehicle 4037, alongside you in your right adjacent lane: side by side, speed 4.8 m/s, accelerating (+0.6 m/s^2).
+- Vehicle 4002, behind you in your right adjacent lane: gap 8.7 m, speed 4.0 m/s, accelerating (+1.0 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 3757, which is directly ahead in your lane (gap 2.3 m, speed 0.0 m/s, acceleration -0.0 m/s^2), about 1.5 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+expresswayA_track_9_car_3806_frame_4166_to_4258,test,gpt41,ACC,collision,preceding,3757,1.5,2.3173308379278277,0.1198799995568344,-4.856054740032059,4.228596139910224e-15,-5.646546710229189e-31,IDLE;DEC,2,"Ego vehicle 3806 in lane 4, speed 0.1 m/s, acceleration -4.9 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 3757, directly ahead in your lane: gap 2.3 m, speed 0.0 m/s, steady speed (-0.0 m/s^2).
+- Vehicle 3825, behind you in your lane: gap 7.1 m, speed 4.1 m/s, braking (-0.9 m/s^2).
+- Vehicle 3554, ahead in your left adjacent lane: gap 3.1 m, speed 0.6 m/s, braking (-1.0 m/s^2).
+- Vehicle 3566, alongside you in your left adjacent lane: side by side, speed 1.9 m/s, braking (-1.3 m/s^2).
+- Vehicle 3786, behind you in your left adjacent lane: gap 5.7 m, speed 2.1 m/s, braking (-0.5 m/s^2).
+- Vehicle 3994, ahead in your right adjacent lane: gap 4.9 m, speed 4.7 m/s, braking (-0.5 m/s^2).
+- Vehicle 4037, alongside you in your right adjacent lane: side by side, speed 4.8 m/s, accelerating (+0.6 m/s^2).
+- Vehicle 4002, behind you in your right adjacent lane: gap 8.7 m, speed 4.0 m/s, accelerating (+1.0 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 3757, which is directly ahead in your lane (gap 2.3 m, speed 0.0 m/s, acceleration -0.0 m/s^2), about 1.5 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+expresswayA_track_9_car_4821_frame_8420_to_8511,test,gpt4o,DEC,collision,preceding,4813,0.2,0.48604057359769737,15.044649625126096,4.46542582206233,11.001453106976507,-0.3745696193071492,LEFT,1,"Ego vehicle 4821 in lane 8, speed 15.0 m/s, acceleration +4.5 m/s^2, heading 359 deg.
+Surrounding vehicles:
+- Vehicle 4813, directly ahead in your lane: gap 0.5 m, speed 11.0 m/s, steady speed (-0.4 m/s^2).
+- Vehicle 4832, behind you in your lane: gap 16.8 m, speed 11.7 m/s, accelerating, drifting right (+1.0 m/s^2).
+- Vehicle 4816, ahead in your left adjacent lane: gap 53.2 m, speed 18.3 m/s, accelerating (+1.2 m/s^2).
+- Vehicle 4838, behind you in your left adjacent lane: gap 20.9 m, speed 13.6 m/s, braking, drifting toward your lane (-1.0 m/s^2).
+- Vehicle 4799, ahead in your right adjacent lane: gap 70.3 m, speed 7.9 m/s, braking (-0.5 m/s^2).
+Chosen action: Deceleration (Action ID 5).
+Result: UNSAFE - the ego would collide with vehicle 4813, which is directly ahead in your lane (gap 0.5 m, speed 11.0 m/s, acceleration -0.4 m/s^2), about 0.2 s after the decision.
+Safe actions in this situation: Turn Left (ID 2).
+Lesson: Moderate braking may not be enough when the gap ahead is very short; check whether a free adjacent lane gives more room."
+expresswayA_track_9_car_4821_frame_8420_to_8511,test,gpt41,DEC,collision,preceding,4813,0.2,0.48604057359769737,15.044649625126096,4.46542582206233,11.001453106976507,-0.3745696193071492,LEFT,1,"Ego vehicle 4821 in lane 8, speed 15.0 m/s, acceleration +4.5 m/s^2, heading 359 deg.
+Surrounding vehicles:
+- Vehicle 4813, directly ahead in your lane: gap 0.5 m, speed 11.0 m/s, steady speed (-0.4 m/s^2).
+- Vehicle 4832, behind you in your lane: gap 16.8 m, speed 11.7 m/s, accelerating, drifting right (+1.0 m/s^2).
+- Vehicle 4816, ahead in your left adjacent lane: gap 53.2 m, speed 18.3 m/s, accelerating (+1.2 m/s^2).
+- Vehicle 4838, behind you in your left adjacent lane: gap 20.9 m, speed 13.6 m/s, braking, drifting toward your lane (-1.0 m/s^2).
+- Vehicle 4799, ahead in your right adjacent lane: gap 70.3 m, speed 7.9 m/s, braking (-0.5 m/s^2).
+Chosen action: Deceleration (Action ID 5).
+Result: UNSAFE - the ego would collide with vehicle 4813, which is directly ahead in your lane (gap 0.5 m, speed 11.0 m/s, acceleration -0.4 m/s^2), about 0.2 s after the decision.
+Safe actions in this situation: Turn Left (ID 2).
+Lesson: Moderate braking may not be enough when the gap ahead is very short; check whether a free adjacent lane gives more room."
+freewayB_track_2_car_8122_frame_4740_to_4837,test,gpt4o,LEFT,collision,left_alongside,8125,1.0,0.0,18.92371504343718,1.3132924600700726,20.622980908539795,0.08353623880709117,DEC,1,"Ego vehicle 8122 in lane 4, speed 18.9 m/s, acceleration +1.3 m/s^2, heading 1 deg.
+Surrounding vehicles:
+- Vehicle 8064, directly ahead in your lane: gap 46.9 m, speed 18.7 m/s, steady speed (+0.5 m/s^2).
+- Vehicle 8166, behind you in your lane: gap 31.9 m, speed 20.1 m/s, braking (-1.3 m/s^2).
+- Vehicle 8145, ahead in your left adjacent lane: gap 7.8 m, speed 19.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 8125, alongside you in your left adjacent lane: side by side, speed 20.6 m/s, steady speed (+0.1 m/s^2).
+- Vehicle 8164, behind you in your left adjacent lane: gap 19.1 m, speed 19.5 m/s, steady speed (+0.5 m/s^2).
+- Vehicle 8042, ahead in your right adjacent lane: gap 3.9 m, speed 14.5 m/s, braking (-0.7 m/s^2).
+- Vehicle 8080, behind you in your right adjacent lane: gap 26.2 m, speed 19.7 m/s, accelerating (+8.0 m/s^2).
+Chosen action: Turn Left (Action ID 2).
+Result: UNSAFE - the ego would collide with vehicle 8125, which is alongside you in your left adjacent lane (gap 0.0 m, speed 20.6 m/s, acceleration +0.1 m/s^2), about 1.0 s after the decision.
+Safe actions in this situation: Deceleration (ID 5).
+Lesson: Only change lanes when the target lane is clear: a vehicle alongside you in your left adjacent lane occupies the space you would move into."
+freewayB_track_2_car_8122_frame_4740_to_4837,test,gpt41,IDLE,collision,right_preceding,8042,2.0,3.8922346932470013,18.92371504343718,1.3132924600700726,14.454849685450363,-0.6541197353746051,DEC,1,"Ego vehicle 8122 in lane 4, speed 18.9 m/s, acceleration +1.3 m/s^2, heading 1 deg.
+Surrounding vehicles:
+- Vehicle 8064, directly ahead in your lane: gap 46.9 m, speed 18.7 m/s, steady speed (+0.5 m/s^2).
+- Vehicle 8166, behind you in your lane: gap 31.9 m, speed 20.1 m/s, braking (-1.3 m/s^2).
+- Vehicle 8145, ahead in your left adjacent lane: gap 7.8 m, speed 19.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 8125, alongside you in your left adjacent lane: side by side, speed 20.6 m/s, steady speed (+0.1 m/s^2).
+- Vehicle 8164, behind you in your left adjacent lane: gap 19.1 m, speed 19.5 m/s, steady speed (+0.5 m/s^2).
+- Vehicle 8042, ahead in your right adjacent lane: gap 3.9 m, speed 14.5 m/s, braking (-0.7 m/s^2).
+- Vehicle 8080, behind you in your right adjacent lane: gap 26.2 m, speed 19.7 m/s, accelerating (+8.0 m/s^2).
+Chosen action: IDLE (keep lane and speed) (Action ID 1).
+Result: UNSAFE - the ego would collide with vehicle 8042, which is ahead in your right adjacent lane (gap 3.9 m, speed 14.5 m/s, acceleration -0.7 m/s^2), about 2.0 s after the decision.
+Safe actions in this situation: Deceleration (ID 5).
+Lesson: The vehicle ahead in your right adjacent lane is moving into or overlapping your lane; staying beside it is not safe. Choose the speed change that opens a gap to it (see the safe actions) instead of IDLE (keep lane and speed)."
+freewayB_track_2_car_9135_frame_7038_to_7257,test,gpt4o,ACC,collision,left_alongside,9167,1.2000000000000002,0.0,11.461583827515028,-3.3661128561169176,12.29964523913602,-0.008074906260400581,RIGHT;DEC,2,"Ego vehicle 9135 in lane 1, speed 11.5 m/s, acceleration -3.4 m/s^2, heading 179 deg.
+Surrounding vehicles:
+- Vehicle 9127, directly ahead in your lane: gap 20.4 m, speed 10.0 m/s, steady speed (+0.4 m/s^2).
+- Vehicle 9163, behind you in your lane: gap 17.3 m, speed 13.3 m/s, steady speed (-0.1 m/s^2).
+- Vehicle 9145, ahead in your left adjacent lane: gap 13.4 m, speed 12.2 m/s, braking (-1.4 m/s^2).
+- Vehicle 9167, alongside you in your left adjacent lane: side by side, speed 12.3 m/s, steady speed (-0.0 m/s^2).
+- Vehicle 9222, behind you in your left adjacent lane: gap 27.0 m, speed 12.8 m/s, steady speed (-0.4 m/s^2).
+- Vehicle 9162, ahead in your right adjacent lane: gap 8.2 m, speed 10.0 m/s, braking (-1.6 m/s^2).
+- Vehicle 9185, behind you in your right adjacent lane: gap 4.3 m, speed 12.6 m/s, braking (-0.9 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 9167, which is alongside you in your left adjacent lane (gap 0.0 m, speed 12.3 m/s, acceleration -0.0 m/s^2), about 1.2 s after the decision.
+Safe actions in this situation: Turn Right (ID 3), Deceleration (ID 5).
+Lesson: The vehicle alongside you in your left adjacent lane is moving into or overlapping your lane; staying beside it is not safe. Choose the speed change that opens a gap to it (see the safe actions) instead of Acceleration."
+freewayB_track_2_car_9135_frame_7038_to_7257,test,gpt41,IDLE,collision,left_alongside,9167,1.3,0.0,11.461583827515028,-3.3661128561169176,12.29964523913602,-0.008074906260400581,RIGHT;DEC,2,"Ego vehicle 9135 in lane 1, speed 11.5 m/s, acceleration -3.4 m/s^2, heading 179 deg.
+Surrounding vehicles:
+- Vehicle 9127, directly ahead in your lane: gap 20.4 m, speed 10.0 m/s, steady speed (+0.4 m/s^2).
+- Vehicle 9163, behind you in your lane: gap 17.3 m, speed 13.3 m/s, steady speed (-0.1 m/s^2).
+- Vehicle 9145, ahead in your left adjacent lane: gap 13.4 m, speed 12.2 m/s, braking (-1.4 m/s^2).
+- Vehicle 9167, alongside you in your left adjacent lane: side by side, speed 12.3 m/s, steady speed (-0.0 m/s^2).
+- Vehicle 9222, behind you in your left adjacent lane: gap 27.0 m, speed 12.8 m/s, steady speed (-0.4 m/s^2).
+- Vehicle 9162, ahead in your right adjacent lane: gap 8.2 m, speed 10.0 m/s, braking (-1.6 m/s^2).
+- Vehicle 9185, behind you in your right adjacent lane: gap 4.3 m, speed 12.6 m/s, braking (-0.9 m/s^2).
+Chosen action: IDLE (keep lane and speed) (Action ID 1).
+Result: UNSAFE - the ego would collide with vehicle 9167, which is alongside you in your left adjacent lane (gap 0.0 m, speed 12.3 m/s, acceleration -0.0 m/s^2), about 1.3 s after the decision.
+Safe actions in this situation: Turn Right (ID 3), Deceleration (ID 5).
+Lesson: The vehicle alongside you in your left adjacent lane is moving into or overlapping your lane; staying beside it is not safe. Choose the speed change that opens a gap to it (see the safe actions) instead of IDLE (keep lane and speed)."
+freewayB_track_2_car_9643_frame_8681_to_8775,test,gpt4o,ACC,collision,preceding,9617,1.9000000000000001,3.756193178049215,1.5544557641078426e-14,-3.0159159400015167,0.0,0.0,IDLE;RIGHT;DEC,3,"Ego vehicle 9643 in lane 2, speed 0.0 m/s, acceleration -3.0 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 9617, directly ahead in your lane: gap 3.8 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 9666, behind you in your lane: gap 2.4 m, speed 0.3 m/s, braking (-4.0 m/s^2).
+- Vehicle 9594, ahead in your right adjacent lane: gap 0.2 m, speed 1.7 m/s, braking (-0.7 m/s^2).
+- Vehicle 9611, behind you in your right adjacent lane: gap 5.0 m, speed 3.6 m/s, braking (-0.6 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 9617, which is directly ahead in your lane (gap 3.8 m, speed 0.0 m/s, acceleration +0.0 m/s^2), about 1.9 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Right (ID 3), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_2_car_9643_frame_8681_to_8775,test,gpt41,ACC,collision,preceding,9617,1.9000000000000001,3.756193178049215,1.5544557641078426e-14,-3.0159159400015167,0.0,0.0,IDLE;RIGHT;DEC,3,"Ego vehicle 9643 in lane 2, speed 0.0 m/s, acceleration -3.0 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 9617, directly ahead in your lane: gap 3.8 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 9666, behind you in your lane: gap 2.4 m, speed 0.3 m/s, braking (-4.0 m/s^2).
+- Vehicle 9594, ahead in your right adjacent lane: gap 0.2 m, speed 1.7 m/s, braking (-0.7 m/s^2).
+- Vehicle 9611, behind you in your right adjacent lane: gap 5.0 m, speed 3.6 m/s, braking (-0.6 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 9617, which is directly ahead in your lane (gap 3.8 m, speed 0.0 m/s, acceleration +0.0 m/s^2), about 1.9 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Right (ID 3), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_2_car_9666_frame_8318_to_8410,test,gpt4o,ACC,collision,preceding,9643,1.5,4.85289850980279,7.350920717555275,-1.9023576103311168,6.830808311565383,-1.378620902531801,IDLE;RIGHT;DEC,3,"Ego vehicle 9666 in lane 2, speed 7.4 m/s, acceleration -1.9 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 9643, directly ahead in your lane: gap 4.9 m, speed 6.8 m/s, braking (-1.4 m/s^2).
+- Vehicle 9663, behind you in your lane: gap 13.7 m, speed 8.6 m/s, braking (-4.1 m/s^2).
+- Vehicle 9611, ahead in your right adjacent lane: gap 13.5 m, speed 5.2 m/s, braking (-2.6 m/s^2).
+- Vehicle 9634, alongside you in your right adjacent lane: side by side, speed 7.5 m/s, braking (-2.0 m/s^2).
+- Vehicle 9654, behind you in your right adjacent lane: gap 8.0 m, speed 8.3 m/s, braking (-1.0 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 9643, which is directly ahead in your lane (gap 4.9 m, speed 6.8 m/s, acceleration -1.4 m/s^2), about 1.5 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Right (ID 3), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_2_car_9739_frame_8894_to_8990,test,gpt41,ACC,collision,preceding,9729,1.5,2.2110712748355006,3.9347781921605925e-14,1.2182336035783766e-30,8.695423048266092e-15,2.423015498442141e-31,IDLE;DEC,2,"Ego vehicle 9739 in lane 2, speed 0.0 m/s, acceleration +0.0 m/s^2, heading 178 deg.
+Surrounding vehicles:
+- Vehicle 9729, directly ahead in your lane: gap 2.2 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 9764, behind you in your lane: gap 2.0 m, speed 0.0 m/s, braking (-6.6 m/s^2).
+- Vehicle 9708, ahead in your right adjacent lane: gap 0.4 m, speed 2.6 m/s, steady speed (+0.3 m/s^2).
+- Vehicle 9724, alongside you in your right adjacent lane: side by side, speed 2.2 m/s, accelerating (+1.6 m/s^2).
+- Vehicle 9702, behind you in your right adjacent lane: gap 9.5 m, speed 1.7 m/s, braking (-2.0 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 9729, which is directly ahead in your lane (gap 2.2 m, speed 0.0 m/s, acceleration +0.0 m/s^2), about 1.5 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_2_car_9764_frame_8894_to_8990,test,gpt4o,ACC,collision,preceding,9739,1.4000000000000001,2.0350864718527504,0.0,-6.622615676367867,3.9347781921605925e-14,1.2182336035783766e-30,IDLE;DEC,2,"Ego vehicle 9764 in lane 2, speed 0.0 m/s, acceleration -6.6 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 9739, directly ahead in your lane: gap 2.0 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 9794, behind you in your lane: gap 7.1 m, speed 4.4 m/s, steady speed (+0.1 m/s^2).
+- Vehicle 9708, ahead in your right adjacent lane: gap 6.7 m, speed 2.6 m/s, steady speed (+0.3 m/s^2).
+- Vehicle 9724, alongside you in your right adjacent lane: side by side, speed 2.2 m/s, accelerating (+1.6 m/s^2).
+- Vehicle 9702, behind you in your right adjacent lane: gap 2.7 m, speed 1.7 m/s, accelerating (+1.0 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 9739, which is directly ahead in your lane (gap 2.0 m, speed 0.0 m/s, acceleration +0.0 m/s^2), about 1.4 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_2_car_9764_frame_8894_to_8990,test,gpt41,ACC,collision,preceding,9739,1.4000000000000001,2.0350864718527504,0.0,-6.622615676367867,3.9347781921605925e-14,1.2182336035783766e-30,IDLE;DEC,2,"Ego vehicle 9764 in lane 2, speed 0.0 m/s, acceleration -6.6 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 9739, directly ahead in your lane: gap 2.0 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 9794, behind you in your lane: gap 7.1 m, speed 4.4 m/s, steady speed (+0.1 m/s^2).
+- Vehicle 9708, ahead in your right adjacent lane: gap 6.7 m, speed 2.6 m/s, steady speed (+0.3 m/s^2).
+- Vehicle 9724, alongside you in your right adjacent lane: side by side, speed 2.2 m/s, accelerating (+1.6 m/s^2).
+- Vehicle 9702, behind you in your right adjacent lane: gap 2.7 m, speed 1.7 m/s, accelerating (+1.0 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 9739, which is directly ahead in your lane (gap 2.0 m, speed 0.0 m/s, acceleration +0.0 m/s^2), about 1.4 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_2_car_9892_frame_8887_to_8998,test,gpt4o,DEC,unneeded_brake,following,9915,0.9,1.955609851606689,2.255324663606293,-0.21140921000916785,3.1101281160670844,-0.5350391582635932,IDLE;RIGHT,2,"Ego vehicle 9892 in lane 1, speed 2.3 m/s, acceleration -0.2 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 9873, directly ahead in your lane: gap 5.0 m, speed 0.0 m/s, braking (-1.3 m/s^2).
+- Vehicle 9915, behind you in your lane: gap 2.0 m, speed 3.1 m/s, braking (-0.5 m/s^2).
+- Vehicle 9857, ahead in your left adjacent lane: gap 8.5 m, speed 6.2 m/s, steady speed (-0.1 m/s^2).
+- Vehicle 9889, behind you in your left adjacent lane: gap 5.8 m, speed 6.5 m/s, accelerating (+2.5 m/s^2).
+- Vehicle 9883, ahead in your right adjacent lane: gap 4.7 m, speed 3.9 m/s, braking (-2.8 m/s^2).
+- Vehicle 9917, behind you in your right adjacent lane: gap 6.2 m, speed 7.4 m/s, braking (-2.0 m/s^2).
+Chosen action: Deceleration (Action ID 5).
+Result: UNSAFE - braking was not needed (a non-braking action was safe), and vehicle 9915, which is behind you in your lane (gap 2.0 m, speed 3.1 m/s, acceleration -0.5 m/s^2), would run into the ego about 0.9 s after braking.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Right (ID 3).
+Lesson: Do not brake when keeping your speed (or accelerating) is already safe and a vehicle is following closely; unnecessary braking creates a rear-end conflict."
+freewayB_track_2_car_9892_frame_8887_to_8998,test,gpt41,DEC,unneeded_brake,following,9915,0.9,1.955609851606689,2.255324663606293,-0.21140921000916785,3.1101281160670844,-0.5350391582635932,IDLE;RIGHT,2,"Ego vehicle 9892 in lane 1, speed 2.3 m/s, acceleration -0.2 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 9873, directly ahead in your lane: gap 5.0 m, speed 0.0 m/s, braking (-1.3 m/s^2).
+- Vehicle 9915, behind you in your lane: gap 2.0 m, speed 3.1 m/s, braking (-0.5 m/s^2).
+- Vehicle 9857, ahead in your left adjacent lane: gap 8.5 m, speed 6.2 m/s, steady speed (-0.1 m/s^2).
+- Vehicle 9889, behind you in your left adjacent lane: gap 5.8 m, speed 6.5 m/s, accelerating (+2.5 m/s^2).
+- Vehicle 9883, ahead in your right adjacent lane: gap 4.7 m, speed 3.9 m/s, braking (-2.8 m/s^2).
+- Vehicle 9917, behind you in your right adjacent lane: gap 6.2 m, speed 7.4 m/s, braking (-2.0 m/s^2).
+Chosen action: Deceleration (Action ID 5).
+Result: UNSAFE - braking was not needed (a non-braking action was safe), and vehicle 9915, which is behind you in your lane (gap 2.0 m, speed 3.1 m/s, acceleration -0.5 m/s^2), would run into the ego about 0.9 s after braking.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Right (ID 3).
+Lesson: Do not brake when keeping your speed (or accelerating) is already safe and a vehicle is following closely; unnecessary braking creates a rear-end conflict."
+freewayB_track_3_car_10051_frame_165_to_332,test,gpt4o,ACC,collision,preceding,10079,1.4000000000000001,3.3657199342179958,1.5486626321025643,-0.6125944788273159,1.420250107526619,-1.061976337627059,IDLE;LEFT;DEC,3,"Ego vehicle 10051 in lane 0, speed 1.5 m/s, acceleration -0.6 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 10079, directly ahead in your lane: gap 3.4 m, speed 1.4 m/s, braking (-1.1 m/s^2).
+- Vehicle 10071, behind you in your lane: gap 2.2 m, speed 0.3 m/s, braking (-4.0 m/s^2).
+- Vehicle 9953, ahead in your left adjacent lane: gap 4.4 m, speed 0.4 m/s, accelerating (+0.9 m/s^2).
+- Vehicle 9993, alongside you in your left adjacent lane: side by side, speed 0.0 m/s, steady speed (-0.0 m/s^2).
+- Vehicle 10017, behind you in your left adjacent lane: gap 3.5 m, speed 0.1 m/s, steady speed (+0.1 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 10079, which is directly ahead in your lane (gap 3.4 m, speed 1.4 m/s, acceleration -1.1 m/s^2), about 1.4 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Left (ID 2), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_3_car_10051_frame_165_to_332,test,gpt41,ACC,collision,preceding,10079,1.4000000000000001,3.3657199342179958,1.5486626321025643,-0.6125944788273159,1.420250107526619,-1.061976337627059,IDLE;LEFT;DEC,3,"Ego vehicle 10051 in lane 0, speed 1.5 m/s, acceleration -0.6 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 10079, directly ahead in your lane: gap 3.4 m, speed 1.4 m/s, braking (-1.1 m/s^2).
+- Vehicle 10071, behind you in your lane: gap 2.2 m, speed 0.3 m/s, braking (-4.0 m/s^2).
+- Vehicle 9953, ahead in your left adjacent lane: gap 4.4 m, speed 0.4 m/s, accelerating (+0.9 m/s^2).
+- Vehicle 9993, alongside you in your left adjacent lane: side by side, speed 0.0 m/s, steady speed (-0.0 m/s^2).
+- Vehicle 10017, behind you in your left adjacent lane: gap 3.5 m, speed 0.1 m/s, steady speed (+0.1 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 10079, which is directly ahead in your lane (gap 3.4 m, speed 1.4 m/s, acceleration -1.1 m/s^2), about 1.4 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Left (ID 2), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_3_car_10071_frame_165_to_332,test,gpt4o,ACC,collision,preceding,10051,1.8,2.192948347936916,0.30586986807833777,-4.011313611723454,1.5486626321025643,-0.6125944788273159,IDLE;LEFT;DEC,3,"Ego vehicle 10071 in lane 0, speed 0.3 m/s, acceleration -4.0 m/s^2, heading 179 deg.
+Surrounding vehicles:
+- Vehicle 10051, directly ahead in your lane: gap 2.2 m, speed 1.5 m/s, braking (-0.6 m/s^2).
+- Vehicle 10102, behind you in your lane: gap 11.2 m, speed 5.9 m/s, braking (-3.0 m/s^2).
+- Vehicle 9993, ahead in your left adjacent lane: gap 2.5 m, speed 0.0 m/s, steady speed (-0.0 m/s^2).
+- Vehicle 10017, alongside you in your left adjacent lane: side by side, speed 0.1 m/s, steady speed (+0.1 m/s^2).
+- Vehicle 10043, behind you in your left adjacent lane: gap 1.8 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 10051, which is directly ahead in your lane (gap 2.2 m, speed 1.5 m/s, acceleration -0.6 m/s^2), about 1.8 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Left (ID 2), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_3_car_10071_frame_165_to_332,test,gpt41,ACC,collision,preceding,10051,1.8,2.192948347936916,0.30586986807833777,-4.011313611723454,1.5486626321025643,-0.6125944788273159,IDLE;LEFT;DEC,3,"Ego vehicle 10071 in lane 0, speed 0.3 m/s, acceleration -4.0 m/s^2, heading 179 deg.
+Surrounding vehicles:
+- Vehicle 10051, directly ahead in your lane: gap 2.2 m, speed 1.5 m/s, braking (-0.6 m/s^2).
+- Vehicle 10102, behind you in your lane: gap 11.2 m, speed 5.9 m/s, braking (-3.0 m/s^2).
+- Vehicle 9993, ahead in your left adjacent lane: gap 2.5 m, speed 0.0 m/s, steady speed (-0.0 m/s^2).
+- Vehicle 10017, alongside you in your left adjacent lane: side by side, speed 0.1 m/s, steady speed (+0.1 m/s^2).
+- Vehicle 10043, behind you in your left adjacent lane: gap 1.8 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 10051, which is directly ahead in your lane (gap 2.2 m, speed 1.5 m/s, acceleration -0.6 m/s^2), about 1.8 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Left (ID 2), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_3_car_10102_frame_341_to_432,test,gpt4o,ACC,collision,preceding,10071,1.9000000000000001,4.054702364175967,0.15281761505202682,-4.354021957908786,7.136996771350823e-15,-8.283835605594097e-31,IDLE;DEC,2,"Ego vehicle 10102 in lane 0, speed 0.2 m/s, acceleration -4.4 m/s^2, heading 178 deg.
+Surrounding vehicles:
+- Vehicle 10071, directly ahead in your lane: gap 4.1 m, speed 0.0 m/s, steady speed (-0.0 m/s^2).
+- Vehicle 10142, behind you in your lane: gap 14.9 m, speed 5.7 m/s, braking (-1.4 m/s^2).
+- Vehicle 10017, ahead in your left adjacent lane: gap 0.5 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 10043, alongside you in your left adjacent lane: side by side, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 10088, behind you in your left adjacent lane: gap 3.5 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 10071, which is directly ahead in your lane (gap 4.1 m, speed 0.0 m/s, acceleration -0.0 m/s^2), about 1.9 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_3_car_10102_frame_341_to_432,test,gpt41,ACC,collision,preceding,10071,1.9000000000000001,4.054702364175967,0.15281761505202682,-4.354021957908786,7.136996771350823e-15,-8.283835605594097e-31,IDLE;DEC,2,"Ego vehicle 10102 in lane 0, speed 0.2 m/s, acceleration -4.4 m/s^2, heading 178 deg.
+Surrounding vehicles:
+- Vehicle 10071, directly ahead in your lane: gap 4.1 m, speed 0.0 m/s, steady speed (-0.0 m/s^2).
+- Vehicle 10142, behind you in your lane: gap 14.9 m, speed 5.7 m/s, braking (-1.4 m/s^2).
+- Vehicle 10017, ahead in your left adjacent lane: gap 0.5 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 10043, alongside you in your left adjacent lane: side by side, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 10088, behind you in your left adjacent lane: gap 3.5 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 10071, which is directly ahead in your lane (gap 4.1 m, speed 0.0 m/s, acceleration -0.0 m/s^2), about 1.9 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_3_car_10258_frame_450_to_549,test,gpt41,ACC,collision,preceding,10253,1.1,1.3303327249163281,0.20104487148600497,-5.0496180084395785,7.94102561485488e-17,-4.084177718097013,IDLE;DEC,2,"Ego vehicle 10258 in lane 1, speed 0.2 m/s, acceleration -5.0 m/s^2, heading 179 deg.
+Surrounding vehicles:
+- Vehicle 10253, directly ahead in your lane: gap 1.3 m, speed 0.0 m/s, braking (-4.1 m/s^2).
+- Vehicle 10282, behind you in your lane: gap 7.7 m, speed 4.4 m/s, steady speed (+0.4 m/s^2).
+- Vehicle 10223, ahead in your left adjacent lane: gap 6.5 m, speed 3.7 m/s, braking (-1.5 m/s^2).
+- Vehicle 10246, alongside you in your left adjacent lane: side by side, speed 3.9 m/s, steady speed (-0.3 m/s^2).
+- Vehicle 10271, behind you in your left adjacent lane: gap 8.3 m, speed 3.8 m/s, braking (-0.8 m/s^2).
+- Vehicle 10236, ahead in your right adjacent lane: gap 10.7 m, speed 6.3 m/s, steady speed (-0.3 m/s^2).
+- Vehicle 10308, behind you in your right adjacent lane: gap 15.2 m, speed 8.0 m/s, braking (-1.4 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 10253, which is directly ahead in your lane (gap 1.3 m, speed 0.0 m/s, acceleration -4.1 m/s^2), about 1.1 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_3_car_10544_frame_845_to_990,test,gpt4o,ACC,collision,preceding,10531,1.1,1.3168139277321105,0.13402991394448793,0.19250476544464107,1.7073205071937987e-15,-5.447813824716991e-32,IDLE;RIGHT;DEC,3,"Ego vehicle 10544 in lane 1, speed 0.1 m/s, acceleration +0.2 m/s^2, heading 178 deg.
+Surrounding vehicles:
+- Vehicle 10531, directly ahead in your lane: gap 1.3 m, speed 0.0 m/s, steady speed (-0.0 m/s^2).
+- Vehicle 10579, behind you in your lane: gap 4.5 m, speed 0.1 m/s, braking (-5.8 m/s^2).
+- Vehicle 10557, ahead in your left adjacent lane: gap 11.0 m, speed 4.4 m/s, braking (-0.8 m/s^2).
+- Vehicle 10600, alongside you in your left adjacent lane: side by side, speed 4.7 m/s, braking (-2.5 m/s^2).
+- Vehicle 10625, behind you in your left adjacent lane: gap 11.1 m, speed 5.8 m/s, braking (-0.8 m/s^2).
+- Vehicle 10551, ahead in your right adjacent lane: gap 4.3 m, speed 3.6 m/s, steady speed (+0.2 m/s^2).
+- Vehicle 10570, alongside you in your right adjacent lane: side by side, speed 4.7 m/s, braking (-1.4 m/s^2).
+- Vehicle 10605, behind you in your right adjacent lane: gap 9.4 m, speed 5.9 m/s, braking (-1.3 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 10531, which is directly ahead in your lane (gap 1.3 m, speed 0.0 m/s, acceleration -0.0 m/s^2), about 1.1 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Right (ID 3), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_3_car_10544_frame_845_to_990,test,gpt41,ACC,collision,preceding,10531,1.1,1.3168139277321105,0.13402991394448793,0.19250476544464107,1.7073205071937987e-15,-5.447813824716991e-32,IDLE;RIGHT;DEC,3,"Ego vehicle 10544 in lane 1, speed 0.1 m/s, acceleration +0.2 m/s^2, heading 178 deg.
+Surrounding vehicles:
+- Vehicle 10531, directly ahead in your lane: gap 1.3 m, speed 0.0 m/s, steady speed (-0.0 m/s^2).
+- Vehicle 10579, behind you in your lane: gap 4.5 m, speed 0.1 m/s, braking (-5.8 m/s^2).
+- Vehicle 10557, ahead in your left adjacent lane: gap 11.0 m, speed 4.4 m/s, braking (-0.8 m/s^2).
+- Vehicle 10600, alongside you in your left adjacent lane: side by side, speed 4.7 m/s, braking (-2.5 m/s^2).
+- Vehicle 10625, behind you in your left adjacent lane: gap 11.1 m, speed 5.8 m/s, braking (-0.8 m/s^2).
+- Vehicle 10551, ahead in your right adjacent lane: gap 4.3 m, speed 3.6 m/s, steady speed (+0.2 m/s^2).
+- Vehicle 10570, alongside you in your right adjacent lane: side by side, speed 4.7 m/s, braking (-1.4 m/s^2).
+- Vehicle 10605, behind you in your right adjacent lane: gap 9.4 m, speed 5.9 m/s, braking (-1.3 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 10531, which is directly ahead in your lane (gap 1.3 m, speed 0.0 m/s, acceleration -0.0 m/s^2), about 1.1 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Right (ID 3), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_3_car_10689_frame_1044_to_1201,test,gpt41,ACC,collision,preceding,10659,1.2000000000000002,1.408906018974978,0.0,0.0,1.5484999948967018e-15,-1.0921537658629827e-30,IDLE;LEFT;DEC,3,"Ego vehicle 10689 in lane 1, speed 0.0 m/s, acceleration +0.0 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 10659, directly ahead in your lane: gap 1.4 m, speed 0.0 m/s, steady speed (-0.0 m/s^2).
+- Vehicle 10717, behind you in your lane: gap 2.3 m, speed 0.0 m/s, braking (-3.8 m/s^2).
+- Vehicle 10704, ahead in your left adjacent lane: gap 0.3 m, speed 3.2 m/s, steady speed (-0.1 m/s^2).
+- Vehicle 10737, behind you in your left adjacent lane: gap 3.4 m, speed 3.4 m/s, braking (-0.5 m/s^2).
+- Vehicle 10669, ahead in your right adjacent lane: gap 12.6 m, speed 2.4 m/s, braking (-0.8 m/s^2).
+- Vehicle 10697, alongside you in your right adjacent lane: side by side, speed 3.6 m/s, braking (-1.1 m/s^2).
+- Vehicle 10727, behind you in your right adjacent lane: gap 4.3 m, speed 4.5 m/s, accelerating (+0.9 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 10659, which is directly ahead in your lane (gap 1.4 m, speed 0.0 m/s, acceleration -0.0 m/s^2), about 1.2 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Left (ID 2), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_3_car_10689_frame_1444_to_1667,test,gpt4o,ACC,collision,preceding,10659,1.3,1.5654511321943119,0.0,0.0,2.0646666598622683e-15,1.9348015769725656e-31,IDLE;DEC,2,"Ego vehicle 10689 in lane 1, speed 0.0 m/s, acceleration +0.0 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 10659, directly ahead in your lane: gap 1.6 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 10717, behind you in your lane: gap 3.6 m, speed 1.8 m/s, steady speed (+0.4 m/s^2).
+- Vehicle 10762, ahead in your left adjacent lane: gap 4.1 m, speed 0.2 m/s, braking (-0.5 m/s^2).
+- Vehicle 10797, alongside you in your left adjacent lane: side by side, speed 0.4 m/s, accelerating (+0.9 m/s^2).
+- Vehicle 10817, behind you in your left adjacent lane: gap 4.6 m, speed 0.1 m/s, braking (-5.3 m/s^2).
+- Vehicle 10756, ahead in your right adjacent lane: gap 9.5 m, speed 4.0 m/s, steady speed (+0.5 m/s^2).
+- Vehicle 10791, alongside you in your right adjacent lane: side by side, speed 3.2 m/s, braking (-1.1 m/s^2).
+- Vehicle 10824, behind you in your right adjacent lane: gap 4.5 m, speed 2.8 m/s, accelerating (+1.1 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 10659, which is directly ahead in your lane (gap 1.6 m, speed 0.0 m/s, acceleration +0.0 m/s^2), about 1.3 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_3_car_10689_frame_1444_to_1667,test,gpt41,ACC,collision,preceding,10659,1.3,1.5654511321943119,0.0,0.0,2.0646666598622683e-15,1.9348015769725656e-31,IDLE;DEC,2,"Ego vehicle 10689 in lane 1, speed 0.0 m/s, acceleration +0.0 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 10659, directly ahead in your lane: gap 1.6 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 10717, behind you in your lane: gap 3.6 m, speed 1.8 m/s, steady speed (+0.4 m/s^2).
+- Vehicle 10762, ahead in your left adjacent lane: gap 4.1 m, speed 0.2 m/s, braking (-0.5 m/s^2).
+- Vehicle 10797, alongside you in your left adjacent lane: side by side, speed 0.4 m/s, accelerating (+0.9 m/s^2).
+- Vehicle 10817, behind you in your left adjacent lane: gap 4.6 m, speed 0.1 m/s, braking (-5.3 m/s^2).
+- Vehicle 10756, ahead in your right adjacent lane: gap 9.5 m, speed 4.0 m/s, steady speed (+0.5 m/s^2).
+- Vehicle 10791, alongside you in your right adjacent lane: side by side, speed 3.2 m/s, braking (-1.1 m/s^2).
+- Vehicle 10824, behind you in your right adjacent lane: gap 4.5 m, speed 2.8 m/s, accelerating (+1.1 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 10659, which is directly ahead in your lane (gap 1.6 m, speed 0.0 m/s, acceleration +0.0 m/s^2), about 1.3 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_3_car_10717_frame_1506_to_1731,test,gpt4o,ACC,collision,preceding,10689,1.5,2.191631585072356,0.0,0.0,0.06701495672226311,0.04434813312502705,IDLE;LEFT;RIGHT;DEC,4,"Ego vehicle 10717 in lane 1, speed 0.0 m/s, acceleration +0.0 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 10689, directly ahead in your lane: gap 2.2 m, speed 0.1 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 10742, behind you in your lane: gap 2.0 m, speed 0.0 m/s, braking (-5.4 m/s^2).
+- Vehicle 10797, ahead in your left adjacent lane: gap 3.0 m, speed 1.7 m/s, steady speed (+0.4 m/s^2).
+- Vehicle 10817, alongside you in your left adjacent lane: side by side, speed 0.0 m/s, steady speed (-0.1 m/s^2).
+- Vehicle 10849, behind you in your left adjacent lane: gap 9.0 m, speed 1.5 m/s, steady speed (-0.3 m/s^2).
+- Vehicle 10791, ahead in your right adjacent lane: gap 11.7 m, speed 4.3 m/s, accelerating (+0.8 m/s^2).
+- Vehicle 10824, alongside you in your right adjacent lane: side by side, speed 3.7 m/s, accelerating (+1.2 m/s^2).
+- Vehicle 10861, behind you in your right adjacent lane: gap 7.1 m, speed 2.7 m/s, steady speed (+0.4 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 10689, which is directly ahead in your lane (gap 2.2 m, speed 0.1 m/s, acceleration +0.0 m/s^2), about 1.5 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Left (ID 2), Turn Right (ID 3), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_3_car_10717_frame_1506_to_1731,test,gpt41,ACC,collision,preceding,10689,1.5,2.191631585072356,0.0,0.0,0.06701495672226311,0.04434813312502705,IDLE;LEFT;RIGHT;DEC,4,"Ego vehicle 10717 in lane 1, speed 0.0 m/s, acceleration +0.0 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 10689, directly ahead in your lane: gap 2.2 m, speed 0.1 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 10742, behind you in your lane: gap 2.0 m, speed 0.0 m/s, braking (-5.4 m/s^2).
+- Vehicle 10797, ahead in your left adjacent lane: gap 3.0 m, speed 1.7 m/s, steady speed (+0.4 m/s^2).
+- Vehicle 10817, alongside you in your left adjacent lane: side by side, speed 0.0 m/s, steady speed (-0.1 m/s^2).
+- Vehicle 10849, behind you in your left adjacent lane: gap 9.0 m, speed 1.5 m/s, steady speed (-0.3 m/s^2).
+- Vehicle 10791, ahead in your right adjacent lane: gap 11.7 m, speed 4.3 m/s, accelerating (+0.8 m/s^2).
+- Vehicle 10824, alongside you in your right adjacent lane: side by side, speed 3.7 m/s, accelerating (+1.2 m/s^2).
+- Vehicle 10861, behind you in your right adjacent lane: gap 7.1 m, speed 2.7 m/s, steady speed (+0.4 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 10689, which is directly ahead in your lane (gap 2.2 m, speed 0.1 m/s, acceleration +0.0 m/s^2), about 1.5 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Left (ID 2), Turn Right (ID 3), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_3_car_10742_frame_1088_to_1239,test,gpt4o,ACC,collision,preceding,10717,1.3,1.802004294179273,7.146923053369392e-16,6.14628844295538e-32,0.0,0.0,IDLE;DEC,2,"Ego vehicle 10742 in lane 1, speed 0.0 m/s, acceleration +0.0 m/s^2, heading 178 deg.
+Surrounding vehicles:
+- Vehicle 10717, directly ahead in your lane: gap 1.8 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 10780, behind you in your lane: gap 2.3 m, speed 0.0 m/s, braking (-5.9 m/s^2).
+- Vehicle 10737, ahead in your left adjacent lane: gap 4.6 m, speed 3.1 m/s, steady speed (-0.1 m/s^2).
+- Vehicle 10762, alongside you in your left adjacent lane: side by side, speed 2.7 m/s, steady speed (-0.4 m/s^2).
+- Vehicle 10797, behind you in your left adjacent lane: gap 8.4 m, speed 3.5 m/s, braking (-0.6 m/s^2).
+- Vehicle 10727, ahead in your right adjacent lane: gap 4.3 m, speed 3.6 m/s, braking (-1.7 m/s^2).
+- Vehicle 10756, alongside you in your right adjacent lane: side by side, speed 4.1 m/s, braking (-0.7 m/s^2).
+- Vehicle 10791, behind you in your right adjacent lane: gap 6.1 m, speed 5.8 m/s, accelerating (+0.5 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 10717, which is directly ahead in your lane (gap 1.8 m, speed 0.0 m/s, acceleration +0.0 m/s^2), about 1.3 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_3_car_10742_frame_1088_to_1239,test,gpt41,ACC,collision,preceding,10717,1.3,1.802004294179273,7.146923053369392e-16,6.14628844295538e-32,0.0,0.0,IDLE;DEC,2,"Ego vehicle 10742 in lane 1, speed 0.0 m/s, acceleration +0.0 m/s^2, heading 178 deg.
+Surrounding vehicles:
+- Vehicle 10717, directly ahead in your lane: gap 1.8 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 10780, behind you in your lane: gap 2.3 m, speed 0.0 m/s, braking (-5.9 m/s^2).
+- Vehicle 10737, ahead in your left adjacent lane: gap 4.6 m, speed 3.1 m/s, steady speed (-0.1 m/s^2).
+- Vehicle 10762, alongside you in your left adjacent lane: side by side, speed 2.7 m/s, steady speed (-0.4 m/s^2).
+- Vehicle 10797, behind you in your left adjacent lane: gap 8.4 m, speed 3.5 m/s, braking (-0.6 m/s^2).
+- Vehicle 10727, ahead in your right adjacent lane: gap 4.3 m, speed 3.6 m/s, braking (-1.7 m/s^2).
+- Vehicle 10756, alongside you in your right adjacent lane: side by side, speed 4.1 m/s, braking (-0.7 m/s^2).
+- Vehicle 10791, behind you in your right adjacent lane: gap 6.1 m, speed 5.8 m/s, accelerating (+0.5 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 10717, which is directly ahead in your lane (gap 1.8 m, speed 0.0 m/s, acceleration +0.0 m/s^2), about 1.3 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_3_car_10780_frame_1103_to_1239,test,gpt4o,ACC,collision,preceding,10742,1.5,2.348176698291759,0.0,-5.865959919490576,7.146923053369392e-16,6.14628844295538e-32,IDLE;RIGHT;DEC,3,"Ego vehicle 10780 in lane 1, speed 0.0 m/s, acceleration -5.9 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 10742, directly ahead in your lane: gap 2.3 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 10804, behind you in your lane: gap 1.2 m, speed 2.2 m/s, braking (-3.1 m/s^2).
+- Vehicle 10737, ahead in your left adjacent lane: gap 11.3 m, speed 3.1 m/s, steady speed (-0.1 m/s^2).
+- Vehicle 10762, alongside you in your left adjacent lane: side by side, speed 2.7 m/s, steady speed (-0.4 m/s^2).
+- Vehicle 10797, behind you in your left adjacent lane: gap 1.3 m, speed 3.5 m/s, braking (-0.6 m/s^2).
+- Vehicle 10756, ahead in your right adjacent lane: gap 2.7 m, speed 4.1 m/s, braking (-0.7 m/s^2).
+- Vehicle 10791, alongside you in your right adjacent lane: side by side, speed 5.8 m/s, accelerating (+0.5 m/s^2).
+- Vehicle 10824, behind you in your right adjacent lane: gap 9.9 m, speed 5.8 m/s, accelerating (+0.8 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 10742, which is directly ahead in your lane (gap 2.3 m, speed 0.0 m/s, acceleration +0.0 m/s^2), about 1.5 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Right (ID 3), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_3_car_10780_frame_1103_to_1239,test,gpt41,ACC,collision,preceding,10742,1.5,2.348176698291759,0.0,-5.865959919490576,7.146923053369392e-16,6.14628844295538e-32,IDLE;RIGHT;DEC,3,"Ego vehicle 10780 in lane 1, speed 0.0 m/s, acceleration -5.9 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 10742, directly ahead in your lane: gap 2.3 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 10804, behind you in your lane: gap 1.2 m, speed 2.2 m/s, braking (-3.1 m/s^2).
+- Vehicle 10737, ahead in your left adjacent lane: gap 11.3 m, speed 3.1 m/s, steady speed (-0.1 m/s^2).
+- Vehicle 10762, alongside you in your left adjacent lane: side by side, speed 2.7 m/s, steady speed (-0.4 m/s^2).
+- Vehicle 10797, behind you in your left adjacent lane: gap 1.3 m, speed 3.5 m/s, braking (-0.6 m/s^2).
+- Vehicle 10756, ahead in your right adjacent lane: gap 2.7 m, speed 4.1 m/s, braking (-0.7 m/s^2).
+- Vehicle 10791, alongside you in your right adjacent lane: side by side, speed 5.8 m/s, accelerating (+0.5 m/s^2).
+- Vehicle 10824, behind you in your right adjacent lane: gap 9.9 m, speed 5.8 m/s, accelerating (+0.8 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 10742, which is directly ahead in your lane (gap 2.3 m, speed 0.0 m/s, acceleration +0.0 m/s^2), about 1.5 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Right (ID 3), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_3_car_10804_frame_1306_to_1444,test,gpt4o,ACC,collision,preceding,10780,0.7000000000000001,0.5479078962679402,2.858769221347757e-15,2.458515377182152e-31,0.0,0.0,IDLE;LEFT;DEC,3,"Ego vehicle 10804 in lane 1, speed 0.0 m/s, acceleration +0.0 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 10780, directly ahead in your lane: gap 0.5 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 10835, behind you in your lane: gap 2.3 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 10817, ahead in your left adjacent lane: gap 1.2 m, speed 1.7 m/s, steady speed (-0.2 m/s^2).
+- Vehicle 10849, behind you in your left adjacent lane: gap 1.2 m, speed 1.6 m/s, braking (-1.4 m/s^2).
+- Vehicle 10824, ahead in your right adjacent lane: gap 3.7 m, speed 0.8 m/s, braking (-2.3 m/s^2).
+- Vehicle 10861, alongside you in your right adjacent lane: side by side, speed 0.2 m/s, braking (-0.8 m/s^2).
+- Vehicle 10899, behind you in your right adjacent lane: gap 2.3 m, speed 0.1 m/s, braking (-5.4 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 10780, which is directly ahead in your lane (gap 0.5 m, speed 0.0 m/s, acceleration +0.0 m/s^2), about 0.7 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Left (ID 2), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_3_car_10862_frame_1519_to_1617,test,gpt4o,RIGHT,collision,left_alongside,10949,2.0,0.0,0.0,-0.8886137058481157,0.6323376170100445,-4.2556507042614236,IDLE;ACC;DEC,3,"Ego vehicle 10862 in lane 1, speed 0.0 m/s, acceleration -0.9 m/s^2, heading 0 deg.
+Surrounding vehicles:
+- Vehicle 10835, directly ahead in your lane: gap 2.3 m, speed 0.3 m/s, accelerating (+0.8 m/s^2).
+- Vehicle 10901, behind you in your lane: gap 1.1 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 10874, ahead in your left adjacent lane: gap 5.0 m, speed 1.7 m/s, braking (-0.5 m/s^2).
+- Vehicle 10949, alongside you in your left adjacent lane: side by side, speed 0.6 m/s, braking (-4.3 m/s^2).
+- Vehicle 10899, ahead in your right adjacent lane: gap 6.7 m, speed 0.0 m/s, braking (-2.5 m/s^2).
+- Vehicle 10921, alongside you in your right adjacent lane: side by side, speed 0.0 m/s, braking (-0.6 m/s^2).
+Chosen action: Turn Right (Action ID 3).
+Result: UNSAFE - the ego would collide with vehicle 10949, which is alongside you in your left adjacent lane (gap 0.0 m, speed 0.6 m/s, acceleration -4.3 m/s^2), about 2.0 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Acceleration (ID 4), Deceleration (ID 5).
+Lesson: Only change lanes when the target lane is clear: a vehicle alongside you in your left adjacent lane occupies the space you would move into."
+freewayB_track_3_car_9980_frame_343_to_433,test,gpt4o,ACC,collision,preceding,9967,1.0,0.6261804528776684,0.0,-4.432277042063277,0.23635389557836434,0.35845273647811865,IDLE;RIGHT;DEC,3,"Ego vehicle 9980 in lane 2, speed 0.0 m/s, acceleration -4.4 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 9967, directly ahead in your lane: gap 0.6 m, speed 0.2 m/s, steady speed (+0.4 m/s^2).
+- Vehicle 9999, behind you in your lane: gap 6.2 m, speed 4.0 m/s, braking (-0.8 m/s^2).
+- Vehicle 9915, ahead in your right adjacent lane: gap 2.4 m, speed 2.2 m/s, steady speed (+0.1 m/s^2).
+- Vehicle 9912, alongside you in your right adjacent lane: side by side, speed 2.4 m/s, accelerating (+0.9 m/s^2).
+- Vehicle 9935, behind you in your right adjacent lane: gap 5.5 m, speed 1.7 m/s, braking (-0.6 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 9967, which is directly ahead in your lane (gap 0.6 m, speed 0.2 m/s, acceleration +0.4 m/s^2), about 1.0 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Right (ID 3), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_3_car_9980_frame_343_to_433,test,gpt41,ACC,collision,preceding,9967,1.0,0.6261804528776684,0.0,-4.432277042063277,0.23635389557836434,0.35845273647811865,IDLE;RIGHT;DEC,3,"Ego vehicle 9980 in lane 2, speed 0.0 m/s, acceleration -4.4 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 9967, directly ahead in your lane: gap 0.6 m, speed 0.2 m/s, steady speed (+0.4 m/s^2).
+- Vehicle 9999, behind you in your lane: gap 6.2 m, speed 4.0 m/s, braking (-0.8 m/s^2).
+- Vehicle 9915, ahead in your right adjacent lane: gap 2.4 m, speed 2.2 m/s, steady speed (+0.1 m/s^2).
+- Vehicle 9912, alongside you in your right adjacent lane: side by side, speed 2.4 m/s, accelerating (+0.9 m/s^2).
+- Vehicle 9935, behind you in your right adjacent lane: gap 5.5 m, speed 1.7 m/s, braking (-0.6 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 9967, which is directly ahead in your lane (gap 0.6 m, speed 0.2 m/s, acceleration +0.4 m/s^2), about 1.0 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Right (ID 3), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_4_car_1209_frame_6049_to_6183,train,gpt41,ACC,collision,preceding,1189,2.0,10.879205100721704,8.191840187648198,-0.9739777566961277,6.680459262349791,-1.7318123707575146,IDLE;DEC,2,"Ego vehicle 1209 in lane 0, speed 8.2 m/s, acceleration -1.0 m/s^2, heading 179 deg.
+Surrounding vehicles:
+- Vehicle 1189, directly ahead in your lane: gap 10.9 m, speed 6.7 m/s, braking (-1.7 m/s^2).
+- Vehicle 1326, behind you in your lane: gap 12.1 m, speed 8.9 m/s, braking (-2.9 m/s^2).
+- Vehicle 1161, ahead in your left adjacent lane: gap 7.1 m, speed 8.4 m/s, braking (-0.6 m/s^2).
+- Vehicle 1192, alongside you in your left adjacent lane: side by side, speed 7.9 m/s, braking (-1.3 m/s^2).
+- Vehicle 1211, behind you in your left adjacent lane: gap 15.6 m, speed 10.2 m/s, steady speed (+0.2 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 1189, which is directly ahead in your lane (gap 10.9 m, speed 6.7 m/s, acceleration -1.7 m/s^2), about 2.0 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_4_car_1309_frame_6937_to_7083,train,gpt4o,ACC,collision,preceding,1291,1.5,1.8002688020236048,0.0,-6.005532953799853,0.9454014505756155,-1.0533064037570197,IDLE;RIGHT;DEC,3,"Ego vehicle 1309 in lane 2, speed 0.0 m/s, acceleration -6.0 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 1291, directly ahead in your lane: gap 1.8 m, speed 0.9 m/s, braking (-1.1 m/s^2).
+- Vehicle 1328, behind you in your lane: gap 9.1 m, speed 5.7 m/s, braking (-1.7 m/s^2).
+- Vehicle 1373, ahead in your right adjacent lane: gap 14.8 m, speed 5.3 m/s, braking (-1.0 m/s^2).
+- Vehicle 1383, alongside you in your right adjacent lane: side by side, speed 6.8 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 1398, behind you in your right adjacent lane: gap 12.2 m, speed 7.2 m/s, braking (-1.4 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 1291, which is directly ahead in your lane (gap 1.8 m, speed 0.9 m/s, acceleration -1.1 m/s^2), about 1.5 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Right (ID 3), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_4_car_1309_frame_6937_to_7083,train,gpt41,ACC,collision,preceding,1291,1.5,1.8002688020236048,0.0,-6.005532953799853,0.9454014505756155,-1.0533064037570197,IDLE;RIGHT;DEC,3,"Ego vehicle 1309 in lane 2, speed 0.0 m/s, acceleration -6.0 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 1291, directly ahead in your lane: gap 1.8 m, speed 0.9 m/s, braking (-1.1 m/s^2).
+- Vehicle 1328, behind you in your lane: gap 9.1 m, speed 5.7 m/s, braking (-1.7 m/s^2).
+- Vehicle 1373, ahead in your right adjacent lane: gap 14.8 m, speed 5.3 m/s, braking (-1.0 m/s^2).
+- Vehicle 1383, alongside you in your right adjacent lane: side by side, speed 6.8 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 1398, behind you in your right adjacent lane: gap 12.2 m, speed 7.2 m/s, braking (-1.4 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 1291, which is directly ahead in your lane (gap 1.8 m, speed 0.9 m/s, acceleration -1.1 m/s^2), about 1.5 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Right (ID 3), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_4_car_1590_frame_7504_to_7758,train,gpt4o,ACC,collision,preceding,1595,1.6,2.109448658971658,2.3927312311327578,-2.589291151243254,3.017497087731998,-0.47955719116452555,IDLE;LEFT;DEC,3,"Ego vehicle 1590 in lane 0, speed 2.4 m/s, acceleration -2.6 m/s^2, heading 178 deg.
+Surrounding vehicles:
+- Vehicle 1595, directly ahead in your lane: gap 2.1 m, speed 3.0 m/s, steady speed (-0.5 m/s^2).
+- Vehicle 1624, behind you in your lane: gap 5.2 m, speed 3.1 m/s, braking (-6.2 m/s^2).
+- Vehicle 1586, ahead in your left adjacent lane: gap 11.3 m, speed 5.5 m/s, steady speed (+0.3 m/s^2).
+- Vehicle 1600, behind you in your left adjacent lane: gap 1.2 m, speed 1.6 m/s, steady speed (-0.3 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 1595, which is directly ahead in your lane (gap 2.1 m, speed 3.0 m/s, acceleration -0.5 m/s^2), about 1.6 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Left (ID 2), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_4_car_1590_frame_7504_to_7758,train,gpt41,ACC,collision,preceding,1595,1.6,2.109448658971658,2.3927312311327578,-2.589291151243254,3.017497087731998,-0.47955719116452555,IDLE;LEFT;DEC,3,"Ego vehicle 1590 in lane 0, speed 2.4 m/s, acceleration -2.6 m/s^2, heading 178 deg.
+Surrounding vehicles:
+- Vehicle 1595, directly ahead in your lane: gap 2.1 m, speed 3.0 m/s, steady speed (-0.5 m/s^2).
+- Vehicle 1624, behind you in your lane: gap 5.2 m, speed 3.1 m/s, braking (-6.2 m/s^2).
+- Vehicle 1586, ahead in your left adjacent lane: gap 11.3 m, speed 5.5 m/s, steady speed (+0.3 m/s^2).
+- Vehicle 1600, behind you in your left adjacent lane: gap 1.2 m, speed 1.6 m/s, steady speed (-0.3 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 1595, which is directly ahead in your lane (gap 2.1 m, speed 3.0 m/s, acceleration -0.5 m/s^2), about 1.6 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Left (ID 2), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_4_car_1818_frame_8332_to_8423,train,gpt4o,LEFT,collision,following,1845,0.8,2.3481766982915993,3.312001920794111,1.2588339983592434,4.538645424393332,4.938965683897541,IDLE;ACC,2,"Ego vehicle 1818 in lane 0, speed 3.3 m/s, acceleration +1.3 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 1845, behind you in your lane: gap 2.3 m, speed 4.5 m/s, accelerating (+4.9 m/s^2).
+- Vehicle 1811, ahead in your left adjacent lane: gap 3.0 m, speed 6.0 m/s, accelerating (+0.9 m/s^2).
+- Vehicle 1827, behind you in your left adjacent lane: gap 8.0 m, speed 2.3 m/s, steady speed (-0.1 m/s^2).
+Chosen action: Turn Left (Action ID 2).
+Result: UNSAFE - the ego would collide with vehicle 1845, which is behind you in your lane (gap 2.3 m, speed 4.5 m/s, acceleration +4.9 m/s^2), about 0.8 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Acceleration (ID 4).
+Lesson: Do not start a lane change while a faster vehicle right behind you is about to reach you; you stay in its path during the manoeuvre."
+freewayB_track_4_car_1818_frame_8332_to_8423,train,gpt41,LEFT,collision,following,1845,0.8,2.3481766982915993,3.312001920794111,1.2588339983592434,4.538645424393332,4.938965683897541,IDLE;ACC,2,"Ego vehicle 1818 in lane 0, speed 3.3 m/s, acceleration +1.3 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 1845, behind you in your lane: gap 2.3 m, speed 4.5 m/s, accelerating (+4.9 m/s^2).
+- Vehicle 1811, ahead in your left adjacent lane: gap 3.0 m, speed 6.0 m/s, accelerating (+0.9 m/s^2).
+- Vehicle 1827, behind you in your left adjacent lane: gap 8.0 m, speed 2.3 m/s, steady speed (-0.1 m/s^2).
+Chosen action: Turn Left (Action ID 2).
+Result: UNSAFE - the ego would collide with vehicle 1845, which is behind you in your lane (gap 2.3 m, speed 4.5 m/s, acceleration +4.9 m/s^2), about 0.8 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Acceleration (ID 4).
+Lesson: Do not start a lane change while a faster vehicle right behind you is about to reach you; you stay in its path during the manoeuvre."
+freewayB_track_4_car_2063_frame_7106_to_7269,train,gpt41,LEFT,collision,left_alongside,2052,1.6,0.0,10.241361197594797,1.1331531735121447,7.286324883476207,2.2070696372480847,IDLE;RIGHT;ACC;DEC,4,"Ego vehicle 2063 in lane 1, speed 10.2 m/s, acceleration +1.1 m/s^2, heading 179 deg.
+Surrounding vehicles:
+- Vehicle 2002, directly ahead in your lane: gap 21.1 m, speed 6.2 m/s, steady speed (+0.2 m/s^2).
+- Vehicle 2085, behind you in your lane: gap 23.5 m, speed 8.9 m/s, steady speed (+0.3 m/s^2).
+- Vehicle 2033, ahead in your left adjacent lane: gap 6.4 m, speed 7.0 m/s, accelerating (+1.7 m/s^2).
+- Vehicle 2052, alongside you in your left adjacent lane: side by side, speed 7.3 m/s, accelerating (+2.2 m/s^2).
+- Vehicle 2074, behind you in your left adjacent lane: gap 9.3 m, speed 8.4 m/s, braking (-1.5 m/s^2).
+- Vehicle 2045, ahead in your right adjacent lane: gap 2.7 m, speed 7.7 m/s, braking (-6.5 m/s^2).
+- Vehicle 2069, alongside you in your right adjacent lane: side by side, speed 8.9 m/s, accelerating (+0.6 m/s^2).
+Chosen action: Turn Left (Action ID 2).
+Result: UNSAFE - the ego would collide with vehicle 2052, which is alongside you in your left adjacent lane (gap 0.0 m, speed 7.3 m/s, acceleration +2.2 m/s^2), about 1.6 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Right (ID 3), Acceleration (ID 4), Deceleration (ID 5).
+Lesson: Only change lanes when the target lane is clear: a vehicle alongside you in your left adjacent lane occupies the space you would move into."
+freewayB_track_4_car_2144_frame_7382_to_7832,train,gpt4o,IDLE,collision,preceding,2085,1.7000000000000002,10.8082374380927,8.944559340715411,1.424869748859971,4.94257937518933,-2.7240202325511276,DEC,1,"Ego vehicle 2144 in lane 1, speed 8.9 m/s, acceleration +1.4 m/s^2, heading 178 deg.
+Surrounding vehicles:
+- Vehicle 2085, directly ahead in your lane: gap 10.8 m, speed 4.9 m/s, braking (-2.7 m/s^2).
+- Vehicle 2155, behind you in your lane: gap 6.0 m, speed 9.8 m/s, accelerating (+3.1 m/s^2).
+- Vehicle 2052, ahead in your left adjacent lane: gap 3.1 m, speed 7.5 m/s, steady speed (+0.1 m/s^2).
+- Vehicle 2074, behind you in your left adjacent lane: gap 6.0 m, speed 5.9 m/s, accelerating (+2.4 m/s^2).
+- Vehicle 2096, ahead in your right adjacent lane: gap 15.5 m, speed 9.5 m/s, braking (-1.0 m/s^2).
+- Vehicle 2106, behind you in your right adjacent lane: gap 17.5 m, speed 3.4 m/s, braking (-3.4 m/s^2).
+Chosen action: IDLE (keep lane and speed) (Action ID 1).
+Result: UNSAFE - the ego would collide with vehicle 2085, which is directly ahead in your lane (gap 10.8 m, speed 4.9 m/s, acceleration -2.7 m/s^2), about 1.7 s after the decision.
+Safe actions in this situation: Deceleration (ID 5).
+Lesson: Keeping your speed is not safe when you are closing in on the vehicle ahead; slow down early or change to a free adjacent lane."
+freewayB_track_4_car_2144_frame_7382_to_7832,train,gpt41,IDLE,collision,preceding,2085,1.7000000000000002,10.8082374380927,8.944559340715411,1.424869748859971,4.94257937518933,-2.7240202325511276,DEC,1,"Ego vehicle 2144 in lane 1, speed 8.9 m/s, acceleration +1.4 m/s^2, heading 178 deg.
+Surrounding vehicles:
+- Vehicle 2085, directly ahead in your lane: gap 10.8 m, speed 4.9 m/s, braking (-2.7 m/s^2).
+- Vehicle 2155, behind you in your lane: gap 6.0 m, speed 9.8 m/s, accelerating (+3.1 m/s^2).
+- Vehicle 2052, ahead in your left adjacent lane: gap 3.1 m, speed 7.5 m/s, steady speed (+0.1 m/s^2).
+- Vehicle 2074, behind you in your left adjacent lane: gap 6.0 m, speed 5.9 m/s, accelerating (+2.4 m/s^2).
+- Vehicle 2096, ahead in your right adjacent lane: gap 15.5 m, speed 9.5 m/s, braking (-1.0 m/s^2).
+- Vehicle 2106, behind you in your right adjacent lane: gap 17.5 m, speed 3.4 m/s, braking (-3.4 m/s^2).
+Chosen action: IDLE (keep lane and speed) (Action ID 1).
+Result: UNSAFE - the ego would collide with vehicle 2085, which is directly ahead in your lane (gap 10.8 m, speed 4.9 m/s, acceleration -2.7 m/s^2), about 1.7 s after the decision.
+Safe actions in this situation: Deceleration (ID 5).
+Lesson: Keeping your speed is not safe when you are closing in on the vehicle ahead; slow down early or change to a free adjacent lane."
+freewayB_track_4_car_2144_frame_8542_to_8638,train,gpt4o,ACC,collision,preceding,2119,1.2000000000000002,1.332445156677303,2.0646666598622686e-14,1.3407657329067244e-29,2.834946144503193e-14,1.642907606681299e-29,IDLE;DEC,2,"Ego vehicle 2144 in lane 0, speed 0.0 m/s, acceleration +0.0 m/s^2, heading 178 deg.
+Surrounding vehicles:
+- Vehicle 2119, directly ahead in your lane: gap 1.3 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 2155, behind you in your lane: gap 2.2 m, speed 0.0 m/s, braking (-6.2 m/s^2).
+- Vehicle 2002, ahead in your left adjacent lane: gap 1.7 m, speed 4.2 m/s, braking (-0.8 m/s^2).
+- Vehicle 2063, alongside you in your left adjacent lane: side by side, speed 4.9 m/s, braking (-1.1 m/s^2).
+- Vehicle 2085, behind you in your left adjacent lane: gap 16.3 m, speed 5.2 m/s, steady speed (+0.0 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 2119, which is directly ahead in your lane (gap 1.3 m, speed 0.0 m/s, acceleration +0.0 m/s^2), about 1.2 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_4_car_2144_frame_8542_to_8638,train,gpt41,ACC,collision,preceding,2119,1.2000000000000002,1.332445156677303,2.0646666598622686e-14,1.3407657329067244e-29,2.834946144503193e-14,1.642907606681299e-29,IDLE;DEC,2,"Ego vehicle 2144 in lane 0, speed 0.0 m/s, acceleration +0.0 m/s^2, heading 178 deg.
+Surrounding vehicles:
+- Vehicle 2119, directly ahead in your lane: gap 1.3 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 2155, behind you in your lane: gap 2.2 m, speed 0.0 m/s, braking (-6.2 m/s^2).
+- Vehicle 2002, ahead in your left adjacent lane: gap 1.7 m, speed 4.2 m/s, braking (-0.8 m/s^2).
+- Vehicle 2063, alongside you in your left adjacent lane: side by side, speed 4.9 m/s, braking (-1.1 m/s^2).
+- Vehicle 2085, behind you in your left adjacent lane: gap 16.3 m, speed 5.2 m/s, steady speed (+0.0 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 2119, which is directly ahead in your lane (gap 1.3 m, speed 0.0 m/s, acceleration +0.0 m/s^2), about 1.2 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_4_car_2155_frame_8542_to_8638,train,gpt41,ACC,collision,preceding,2144,1.5,2.19163158507211,0.0,-6.156553894714305,2.0646666598622686e-14,1.3407657329067244e-29,IDLE,1,"Ego vehicle 2155 in lane 0, speed 0.0 m/s, acceleration -6.2 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 2144, directly ahead in your lane: gap 2.2 m, speed 0.0 m/s, steady speed (+0.0 m/s^2).
+- Vehicle 2164, behind you in your lane: gap 0.5 m, speed 4.5 m/s, steady speed, drifting left (-0.0 m/s^2).
+- Vehicle 2002, ahead in your left adjacent lane: gap 8.8 m, speed 4.2 m/s, braking (-0.8 m/s^2).
+- Vehicle 2063, alongside you in your left adjacent lane: side by side, speed 4.9 m/s, braking (-1.1 m/s^2).
+- Vehicle 2085, behind you in your left adjacent lane: gap 9.2 m, speed 5.2 m/s, braking (-0.5 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 2144, which is directly ahead in your lane (gap 2.2 m, speed 0.0 m/s, acceleration +0.0 m/s^2), about 1.5 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_4_car_2559_frame_8788_to_8998,train,gpt41,ACC,collision,left_alongside,2576,1.2000000000000002,0.0,6.790331635087108,2.2432395140931396,8.888152888290731,0.3476736867512294,IDLE,1,"Ego vehicle 2559 in lane 0, speed 6.8 m/s, acceleration +2.2 m/s^2, heading 173 deg.
+Surrounding vehicles:
+- Vehicle 2526, directly ahead in your lane: gap 3.4 m, speed 8.3 m/s, accelerating, drifting right (+5.3 m/s^2).
+- Vehicle 2568, behind you in your lane: gap 1.3 m, speed 7.0 m/s, steady speed, drifting right (-0.1 m/s^2).
+- Vehicle 2557, ahead in your left adjacent lane: gap 11.7 m, speed 8.3 m/s, braking, drifting toward your lane (-1.1 m/s^2).
+- Vehicle 2576, alongside you in your left adjacent lane: side by side, speed 8.9 m/s, steady speed, drifting toward your lane (+0.3 m/s^2).
+- Vehicle 2570, behind you in your left adjacent lane: gap 6.2 m, speed 8.0 m/s, braking, drifting toward your lane (-1.0 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 2576, which is alongside you in your left adjacent lane (gap 0.0 m, speed 8.9 m/s, acceleration +0.3 m/s^2), about 1.2 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1).
+Lesson: The vehicle alongside you in your left adjacent lane is moving into or overlapping your lane; staying beside it is not safe. Choose the speed change that opens a gap to it (see the safe actions) instead of Acceleration."
+freewayB_track_4_car_2576_frame_8806_to_8998,train,gpt4o,DEC,collision,right_alongside,2559,0.8,0.0,8.940072249428399,0.7617923823553308,7.109850181765315,3.211262141266402,,0,"Ego vehicle 2576 in lane 1, speed 8.9 m/s, acceleration +0.8 m/s^2, heading 179 deg.
+Surrounding vehicles:
+- Vehicle 2557, directly ahead in your lane: gap 9.8 m, speed 8.4 m/s, braking (-1.4 m/s^2).
+- Vehicle 2570, behind you in your lane: gap 8.8 m, speed 8.0 m/s, braking (-0.7 m/s^2).
+- Vehicle 2554, ahead in your left adjacent lane: gap 3.7 m, speed 8.1 m/s, steady speed (-0.1 m/s^2).
+- Vehicle 2577, alongside you in your left adjacent lane: side by side, speed 7.9 m/s, braking (-1.9 m/s^2).
+- Vehicle 2597, behind you in your left adjacent lane: gap 17.3 m, speed 7.7 m/s, braking (-1.7 m/s^2).
+- Vehicle 2526, ahead in your right adjacent lane: gap 1.7 m, speed 8.0 m/s, accelerating (+3.1 m/s^2).
+- Vehicle 2559, alongside you in your right adjacent lane: side by side, speed 7.1 m/s, accelerating, drifting toward your lane (+3.2 m/s^2).
+- Vehicle 2568, behind you in your right adjacent lane: gap 3.4 m, speed 7.2 m/s, steady speed (-0.1 m/s^2).
+Chosen action: Deceleration (Action ID 5).
+Result: UNSAFE - the ego would collide with vehicle 2559, which is alongside you in your right adjacent lane (gap 0.0 m, speed 7.1 m/s, acceleration +3.2 m/s^2), about 0.8 s after the decision.
+Safe actions in this situation: none - every action leads to a conflict within 2 s; the least bad is IDLE (keep lane and speed) (ID 1), whose conflict comes latest (0.8 s).
+Lesson: The vehicle alongside you in your right adjacent lane is moving into or overlapping your lane; staying beside it is not safe. Choose the speed change that opens a gap to it (see the safe actions) instead of Deceleration."
+freewayB_track_4_car_2576_frame_8806_to_8998,train,gpt41,IDLE,collision,right_alongside,2559,0.8,0.0,8.940072249428399,0.7617923823553308,7.109850181765315,3.211262141266402,,0,"Ego vehicle 2576 in lane 1, speed 8.9 m/s, acceleration +0.8 m/s^2, heading 179 deg.
+Surrounding vehicles:
+- Vehicle 2557, directly ahead in your lane: gap 9.8 m, speed 8.4 m/s, braking (-1.4 m/s^2).
+- Vehicle 2570, behind you in your lane: gap 8.8 m, speed 8.0 m/s, braking (-0.7 m/s^2).
+- Vehicle 2554, ahead in your left adjacent lane: gap 3.7 m, speed 8.1 m/s, steady speed (-0.1 m/s^2).
+- Vehicle 2577, alongside you in your left adjacent lane: side by side, speed 7.9 m/s, braking (-1.9 m/s^2).
+- Vehicle 2597, behind you in your left adjacent lane: gap 17.3 m, speed 7.7 m/s, braking (-1.7 m/s^2).
+- Vehicle 2526, ahead in your right adjacent lane: gap 1.7 m, speed 8.0 m/s, accelerating (+3.1 m/s^2).
+- Vehicle 2559, alongside you in your right adjacent lane: side by side, speed 7.1 m/s, accelerating, drifting toward your lane (+3.2 m/s^2).
+- Vehicle 2568, behind you in your right adjacent lane: gap 3.4 m, speed 7.2 m/s, steady speed (-0.1 m/s^2).
+Chosen action: IDLE (keep lane and speed) (Action ID 1).
+Result: UNSAFE - the ego would collide with vehicle 2559, which is alongside you in your right adjacent lane (gap 0.0 m, speed 7.1 m/s, acceleration +3.2 m/s^2), about 0.8 s after the decision.
+Safe actions in this situation: none - every action leads to a conflict within 2 s; the least bad is IDLE (keep lane and speed) (ID 1), whose conflict comes latest (0.8 s).
+Lesson: The vehicle alongside you in your right adjacent lane is moving into or overlapping your lane; staying beside it is not safe. Choose the speed change that opens a gap to it (see the safe actions) instead of IDLE (keep lane and speed)."
+freewayB_track_4_car_423_frame_1528_to_1622,train,gpt4o,ACC,collision,preceding,408,2.0,6.686517645738787,6.818801750766788,2.533502767717201,6.024360569182099,-0.4523166470815819,IDLE,1,"Ego vehicle 423 in lane 0, speed 6.8 m/s, acceleration +2.5 m/s^2, heading 178 deg.
+Surrounding vehicles:
+- Vehicle 408, directly ahead in your lane: gap 6.7 m, speed 6.0 m/s, steady speed (-0.5 m/s^2).
+- Vehicle 455, behind you in your lane: gap 4.6 m, speed 9.4 m/s, accelerating (+4.4 m/s^2).
+- Vehicle 421, ahead in your left adjacent lane: gap 3.9 m, speed 9.2 m/s, steady speed (+0.4 m/s^2).
+- Vehicle 440, behind you in your left adjacent lane: gap 18.1 m, speed 5.5 m/s, accelerating (+0.6 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 408, which is directly ahead in your lane (gap 6.7 m, speed 6.0 m/s, acceleration -0.5 m/s^2), about 2.0 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_4_car_423_frame_1528_to_1622,train,gpt41,ACC,collision,preceding,408,2.0,6.686517645738787,6.818801750766788,2.533502767717201,6.024360569182099,-0.4523166470815819,IDLE,1,"Ego vehicle 423 in lane 0, speed 6.8 m/s, acceleration +2.5 m/s^2, heading 178 deg.
+Surrounding vehicles:
+- Vehicle 408, directly ahead in your lane: gap 6.7 m, speed 6.0 m/s, steady speed (-0.5 m/s^2).
+- Vehicle 455, behind you in your lane: gap 4.6 m, speed 9.4 m/s, accelerating (+4.4 m/s^2).
+- Vehicle 421, ahead in your left adjacent lane: gap 3.9 m, speed 9.2 m/s, steady speed (+0.4 m/s^2).
+- Vehicle 440, behind you in your left adjacent lane: gap 18.1 m, speed 5.5 m/s, accelerating (+0.6 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 408, which is directly ahead in your lane (gap 6.7 m, speed 6.0 m/s, acceleration -0.5 m/s^2), about 2.0 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_4_car_760_frame_2862_to_3272,train,gpt41,LEFT,collision,left_following,820,1.4000000000000001,0.7044530094875423,0.0,0.0,3.8436206668614723,0.931941819235313,IDLE;RIGHT;ACC;DEC,4,"Ego vehicle 760 in lane 1, speed 0.0 m/s, acceleration +0.0 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 748, directly ahead in your lane: gap 7.8 m, speed 2.7 m/s, accelerating (+6.8 m/s^2).
+- Vehicle 789, behind you in your lane: gap 2.9 m, speed 0.1 m/s, braking (-3.6 m/s^2).
+- Vehicle 804, ahead in your left adjacent lane: gap 0.8 m, speed 3.4 m/s, braking (-0.6 m/s^2).
+- Vehicle 820, behind you in your left adjacent lane: gap 0.7 m, speed 3.8 m/s, accelerating (+0.9 m/s^2).
+- Vehicle 808, ahead in your right adjacent lane: gap 11.4 m, speed 6.7 m/s, steady speed (-0.1 m/s^2).
+- Vehicle 815, alongside you in your right adjacent lane: side by side, speed 6.2 m/s, steady speed (+0.2 m/s^2).
+- Vehicle 833, behind you in your right adjacent lane: gap 12.5 m, speed 6.0 m/s, accelerating (+3.1 m/s^2).
+Chosen action: Turn Left (Action ID 2).
+Result: UNSAFE - the ego would collide with vehicle 820, which is behind you in your left adjacent lane (gap 0.7 m, speed 3.8 m/s, acceleration +0.9 m/s^2), about 1.4 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Right (ID 3), Acceleration (ID 4), Deceleration (ID 5).
+Lesson: Only change lanes when the target lane is clear: a vehicle behind you in your left adjacent lane occupies the space you would move into."
+freewayB_track_4_car_789_frame_3063_to_3266,train,gpt4o,ACC,collision,preceding,760,1.2000000000000002,2.5829943681208922,0.9440771166323364,-0.13027287215529237,0.0,-0.13304440074131726,IDLE,1,"Ego vehicle 789 in lane 1, speed 0.9 m/s, acceleration -0.1 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 760, directly ahead in your lane: gap 2.6 m, speed 0.0 m/s, steady speed (-0.1 m/s^2).
+- Vehicle 809, behind you in your lane: gap 1.4 m, speed 1.6 m/s, steady speed (+0.3 m/s^2).
+- Vehicle 804, ahead in your left adjacent lane: gap 8.2 m, speed 3.4 m/s, steady speed (-0.1 m/s^2).
+- Vehicle 820, alongside you in your left adjacent lane: side by side, speed 3.8 m/s, steady speed (+0.3 m/s^2).
+- Vehicle 835, behind you in your left adjacent lane: gap 2.6 m, speed 4.1 m/s, accelerating (+0.6 m/s^2).
+- Vehicle 815, ahead in your right adjacent lane: gap 1.3 m, speed 7.4 m/s, accelerating (+2.9 m/s^2).
+- Vehicle 833, behind you in your right adjacent lane: gap 6.2 m, speed 5.0 m/s, steady speed (-0.3 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 760, which is directly ahead in your lane (gap 2.6 m, speed 0.0 m/s, acceleration -0.1 m/s^2), about 1.2 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."
+freewayB_track_4_car_789_frame_3063_to_3266,train,gpt41,DEC,unneeded_brake,following,809,0.9,1.4089060189750988,0.9440771166323364,-0.13027287215529237,1.554882725450164,0.3082828436747239,IDLE,1,"Ego vehicle 789 in lane 1, speed 0.9 m/s, acceleration -0.1 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 760, directly ahead in your lane: gap 2.6 m, speed 0.0 m/s, steady speed (-0.1 m/s^2).
+- Vehicle 809, behind you in your lane: gap 1.4 m, speed 1.6 m/s, steady speed (+0.3 m/s^2).
+- Vehicle 804, ahead in your left adjacent lane: gap 8.2 m, speed 3.4 m/s, steady speed (-0.1 m/s^2).
+- Vehicle 820, alongside you in your left adjacent lane: side by side, speed 3.8 m/s, steady speed (+0.3 m/s^2).
+- Vehicle 835, behind you in your left adjacent lane: gap 2.6 m, speed 4.1 m/s, accelerating (+0.6 m/s^2).
+- Vehicle 815, ahead in your right adjacent lane: gap 1.3 m, speed 7.4 m/s, accelerating (+2.9 m/s^2).
+- Vehicle 833, behind you in your right adjacent lane: gap 6.2 m, speed 5.0 m/s, steady speed (-0.3 m/s^2).
+Chosen action: Deceleration (Action ID 5).
+Result: UNSAFE - braking was not needed (a non-braking action was safe), and vehicle 809, which is behind you in your lane (gap 1.4 m, speed 1.6 m/s, acceleration +0.3 m/s^2), would run into the ego about 0.9 s after braking.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1).
+Lesson: Do not brake when keeping your speed (or accelerating) is already safe and a vehicle is following closely; unnecessary braking creates a rear-end conflict."
+freewayB_track_4_car_886_frame_3359_to_3533,train,gpt41,ACC,collision,preceding,874,1.3,1.565451132194318,5.717538442695514e-15,4.917030754364304e-31,0.8652483327078344,-2.86747383228936,IDLE;RIGHT;DEC,3,"Ego vehicle 886 in lane 1, speed 0.0 m/s, acceleration +0.0 m/s^2, heading 180 deg.
+Surrounding vehicles:
+- Vehicle 874, directly ahead in your lane: gap 1.6 m, speed 0.9 m/s, braking (-2.9 m/s^2).
+- Vehicle 898, behind you in your lane: gap 2.5 m, speed 1.6 m/s, steady speed (-0.3 m/s^2).
+- Vehicle 897, ahead in your left adjacent lane: gap 6.7 m, speed 4.5 m/s, braking (-0.6 m/s^2).
+- Vehicle 909, alongside you in your left adjacent lane: side by side, speed 4.6 m/s, braking (-1.6 m/s^2).
+- Vehicle 939, behind you in your left adjacent lane: gap 17.9 m, speed 6.4 m/s, steady speed (+0.4 m/s^2).
+- Vehicle 878, ahead in your right adjacent lane: gap 3.2 m, speed 5.5 m/s, accelerating (+0.5 m/s^2).
+- Vehicle 895, behind you in your right adjacent lane: gap 4.2 m, speed 2.4 m/s, braking (-1.6 m/s^2).
+Chosen action: Acceleration (Action ID 4).
+Result: UNSAFE - the ego would collide with vehicle 874, which is directly ahead in your lane (gap 1.6 m, speed 0.9 m/s, acceleration -2.9 m/s^2), about 1.3 s after the decision.
+Safe actions in this situation: IDLE (keep lane and speed) (ID 1), Turn Right (ID 3), Deceleration (ID 5).
+Lesson: Do not accelerate when the vehicle ahead in your lane is close and not pulling away; the gap closes faster than it appears."

@@ -219,3 +219,16 @@ __marimo__/
 
 # macOS
 .DS_Store
+
+# K-Risk: local data, caches and staging folders (not tracked)
+/K-Risk_data/
+/trajectory_data/
+/llm_text/
+/figures/
+validation/llm_v3/
+validation/ngsim_v3/
+validation/ngsim_source/*.csv
+validation/ngsim_source/*.pkl
+/K-Risk_statistics.md
+/task[45]_*.csv
+/_preview_overview.png

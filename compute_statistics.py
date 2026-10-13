@@ -36,10 +36,19 @@ np.random.seed(42)
 # Paths
 # ---------------------------------------------------------------------------
 HERE = os.path.dirname(os.path.abspath(__file__))
-EVENT = os.path.join(HERE, "event_annotations")
+# Data root: $KR_ROOT, else event_annotations/ next to this script, else the Figshare
+# release unzipped next to the repository (../K-Risk_data).
+DATA_ROOT = os.environ.get("KR_ROOT") or next(
+    (d for d in (HERE, os.path.join(os.path.dirname(HERE), "K-Risk_data"))
+     if os.path.isdir(os.path.join(d, "event_annotations"))), HERE)
+EVENT = os.path.join(DATA_ROOT, "event_annotations")
 HV = os.path.join(EVENT, "HV")
 AV = os.path.join(EVENT, "AV")
-TRAJ_HV = os.path.join(HERE, "trajectory_data", "HV")
+# Labelled source recordings (not redistributed): $KR_RAW, else trajectory_data/HV here or next to the repository.
+TRAJ_HV = os.environ.get("KR_RAW") or next(
+    (d for d in (os.path.join(HERE, "trajectory_data", "HV"),
+                 os.path.join(os.path.dirname(HERE), "trajectory_data", "HV")) if os.path.isdir(d)),
+    os.path.join(HERE, "trajectory_data", "HV"))
 
 OUT_MD = os.path.join(HERE, "K-Risk_statistics.md")
 OUT_TTC = os.path.join(HERE, "task4_ttc_distribution.csv")

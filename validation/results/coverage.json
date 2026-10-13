@@ -1,0 +1,38 @@
+{
+  "highd": {
+    "events": 8807,
+    "released_agent_frames": 2780577,
+    "original_agent_frames": 21238996,
+    "share_agent_frames": 0.13091847656075645,
+    "released_agents": 20524,
+    "original_agents": 62605,
+    "share_agents": 0.32783324015653703
+  },
+  "ind": {
+    "events": 4684,
+    "released_agent_frames": 2641541,
+    "original_agent_frames": 4914765,
+    "share_agent_frames": 0.5374704589130914,
+    "released_agents": 9681,
+    "original_agents": 13591,
+    "share_agents": 0.7123096166580826
+  },
+  "round": {
+    "events": 2753,
+    "released_agent_frames": 1136863,
+    "original_agent_frames": 3140692,
+    "share_agent_frames": 0.3619785066475796,
+    "released_agents": 9328,
+    "original_agents": 13746,
+    "share_agents": 0.6785974101556816
+  },
+  "ngsim": {
+    "events": 2761,
+    "released_agent_frames": 569316,
+    "original_agent_frames": 102250,
+    "share_agent_frames": 5.567882640586797,
+    "released_agents": 2321,
+    "original_agents": 2297,
+    "share_agents": 1.0104484109708316
+  }
+}

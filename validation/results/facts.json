@@ -1,0 +1,122 @@
+{
+  "extreme_sub_counts": {
+    "expresswayA|ttc_1s": 64,
+    "expresswayA|ttc_2s": 248,
+    "freewayB|ttc_1s": 249,
+    "freewayB|ttc_2s": 475
+  },
+  "window_s": {
+    "expresswayA": {
+      "median": 3.566666666666667,
+      "p05": 3.0,
+      "p95": 8.8
+    },
+    "freewayB": {
+      "median": 3.466666666666667,
+      "p05": 3.0,
+      "p95": 10.233333333333333
+    },
+    "highd": {
+      "median": 5.0,
+      "p05": 3.08,
+      "p95": 5.0
+    },
+    "ind": {
+      "median": 2.84,
+      "p05": 1.0,
+      "p95": 3.0
+    },
+    "ngsim": {
+      "median": 6.0,
+      "p05": 5.1,
+      "p95": 6.0
+    },
+    "round": {
+      "median": 3.0,
+      "p05": 1.2,
+      "p95": 3.0
+    }
+  },
+  "highd_flagged_slot_agents_ge2": 0.5066424435108436,
+  "highd_flagged_slot_agents_ge1": 1.0,
+  "citysim_flagged_slot_agents_ge2": 0.6195663239336252,
+  "pred_conflict_events_with_ge2_partners": {
+    "extreme": 0.5509259259259259,
+    "high": 0.5722585330428468,
+    "moderate": 0.3578097800284855
+  },
+  "extreme_recorded_partners_ge2": 0.09073359073359073,
+  "extreme_pred_partners_ge2": 0.4594594594594595,
+  "ind_slots": {
+    "others_per_frame": 9.302251074498521,
+    "slot_per_frame": 4.912796210779193,
+    "nonslot_med_dist": 21.37169552879802,
+    "nonslot_within20m": 2.152688474635541,
+    "vru_per_frame": 2.1585088977665325,
+    "closest_in_slot": 0.997865072587532
+  },
+  "round_slots": {
+    "others_per_frame": 6.781503252570664,
+    "slot_per_frame": 3.980998418853717,
+    "nonslot_med_dist": 41.15801188407914,
+    "nonslot_within20m": 0.22575539747617396,
+    "vru_per_frame": 0.13484036582938988,
+    "closest_in_slot": 0.9981837994914639
+  },
+  "closest_agent_in_slot_by_src": {
+    "expresswayA": 1.0,
+    "freewayB": 1.0,
+    "highd": 1.0,
+    "ind": 0.997865072587532,
+    "ngsim": 0.9781056639695384,
+    "round": 0.9981837994914639
+  },
+  "extreme_partner_in_slot_frac": 1.0,
+  "llm_input_chars": {
+    "mean": 1756.2123655913979,
+    "median": 1627.0,
+    "max": 3022,
+    "min": 718
+  },
+  "system_prompt_chars": 4632,
+  "highd_abs_acc_gt3_frac": 0.00011869675948900786,
+  "highd_abs_acc_gt2_frac": 0.0008127031993414378,
+  "highd_abs_acc_gt1_frac": 0.010069261277698815,
+  "highd_ttc3_frac": 0.0005752625971585474,
+  "highd_ttc2_frac": 0.0001229342479277269,
+  "checker_base": {
+    "n": 9820,
+    "moderate_n_unsafe": 1.8750604546187328,
+    "moderate_idle_unsafe": 0.2384330162824439,
+    "moderate_solvable": 0.8778010640012897,
+    "moderate_discriminative": 0.7001450910849589,
+    "high_n_unsafe": 2.2948469585432,
+    "high_idle_unsafe": 0.3583882216195273,
+    "high_solvable": 0.8167376985664471,
+    "high_discriminative": 0.6826811313444401,
+    "extreme_n_unsafe": 2.9063706563706564,
+    "extreme_idle_unsafe": 0.472007722007722,
+    "extreme_solvable": 0.7615830115830116,
+    "extreme_discriminative": 0.7055984555984556,
+    "jt_z_n_unsafe": 18.141133891790236,
+    "jt_p_n_unsafe": 1.508858200135314e-73,
+    "jt_z_idle": 13.45362753488007,
+    "jt_p_idle": 2.9313152441675977e-41,
+    "ordered": true,
+    "moderate_unsafe_IDLE": 0.2384330162824439,
+    "high_unsafe_IDLE": 0.3583882216195273,
+    "extreme_unsafe_IDLE": 0.472007722007722,
+    "moderate_unsafe_LEFT": 0.572626148637756,
+    "high_unsafe_LEFT": 0.6528477334366525,
+    "extreme_unsafe_LEFT": 0.7345559845559846,
+    "moderate_unsafe_RIGHT": 0.5752055457036918,
+    "high_unsafe_RIGHT": 0.6214645486245641,
+    "extreme_unsafe_RIGHT": 0.7828185328185329,
+    "moderate_unsafe_ACC": 0.236659680799613,
+    "high_unsafe_ACC": 0.3560635412630763,
+    "extreme_unsafe_ACC": 0.5106177606177607,
+    "moderate_unsafe_DEC": 0.2521360631952281,
+    "high_unsafe_DEC": 0.30608291359938,
+    "extreme_unsafe_DEC": 0.4063706563706564
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "citysim_grade_rule_agreement": 0.9971548879025833,
+  "ngsim_grade_rule_agreement": 1.0,
+  "by_source_level": {
+    "expresswayA|extreme": {
+      "n": 312,
+      "trigger_ok": 283,
+      "trigger_n": 312,
+      "trigger_rate": 0.907051282051282,
+      "ci": [
+        0.8696970417254798,
+        0.9345035448976883
+      ],
+      "recorded_conflict_ego": 0.6634615384615384,
+      "recorded_conflict_any": 0.7211538461538461,
+      "predicted_conflict": 0.8717948717948718,
+      "recorded_or_predicted": 0.907051282051282,
+      "ego_recorded_or_predicted": 0.8878205128205128
+    },
+    "expresswayA|high": {
+      "n": 1576,
+      "trigger_ok": 1564,
+      "trigger_n": 1576,
+      "trigger_rate": 0.9923857868020305,
+      "ci": [
+        0.986737915888407,
+        0.9956390515240224
+      ],
+      "kinematic_confirmed": 0.7538071065989848,
+      "kinematic_ci": [
+        0.7319379122519071,
+        0.7744419678575926
+      ]
+    },
+    "expresswayA|moderate": {
+      "n": 2631,
+      "trigger_ok": 2629,
+      "trigger_n": 2631,
+      "trigger_rate": 0.9992398327632079,
+      "ci": [
+        0.9972323674839798,
+        0.9997915143311549
+      ],
+      "kinematic_confirmed": 0.9266438616495629,
+      "kinematic_ci": [
+        0.9160471198072836,
+        0.9359965096845234
+      ]
+    },
+    "freewayB|extreme": {
+      "n": 724,
+      "trigger_ok": 626,
+      "trigger_n": 724,
+      "trigger_rate": 0.8646408839779005,
+      "ci": [
+        0.8377877078171572,
+        0.8876448588292121
+      ],
+      "recorded_conflict_ego": 0.44337016574585636,
+      "recorded_conflict_any": 0.5662983425414365,
+      "predicted_conflict": 0.8176795580110497,
+      "recorded_or_predicted": 0.8646408839779005,
+      "ego_recorded_or_predicted": 0.8314917127071824
+    },
+    "freewayB|high": {
+      "n": 1008,
+      "trigger_ok": 1008,
+      "trigger_n": 1008,
+      "trigger_rate": 1.0,
+      "ci": [
+        0.9962033583122101,
+        1.0
+      ],
+      "kinematic_confirmed": 0.6011904761904762,
+      "kinematic_ci": [
+        0.5706329221735629,
+        0.6309796622467654
+      ]
+    },
+    "freewayB|moderate": {
+      "n": 3572,
+      "trigger_ok": 3330,
+      "trigger_n": 3572,
+      "trigger_rate": 0.9322508398656215,
+      "ci": [
+        0.9235360771548449,
+        0.9400368506840169
+      ],
+      "kinematic_confirmed": 0.5837066069428891,
+      "kinematic_ci": [
+        0.5674593071621037,
+        0.5997740512730125
+      ]
+    },
+    "highd|high": {
+      "n": 1781,
+      "trigger_ok": 1781,
+      "trigger_n": 1781,
+      "trigger_rate": 1.0,
+      "ci": [
+        0.997847652138991,
+        1.0
+      ]
+    },
+    "highd|moderate": {
+      "n": 7026,
+      "trigger_ok": 7026,
+      "trigger_n": 7026,
+      "trigger_rate": 1.0,
+      "ci": [
+        0.9994535296499427,
+        1.0
+      ]
+    },
+    "ind|high": {
+      "n": 469,
+      "trigger_ok": 469,
+      "trigger_n": 469,
+      "trigger_rate": 1.0,
+      "ci": [
+        0.9918755033398077,
+        1.0
+      ]
+    },
+    "ind|moderate": {
+      "n": 4215,
+      "trigger_ok": 4215,
+      "trigger_n": 4215,
+      "trigger_rate": 1.0,
+      "ci": [
+        0.9990894182896081,
+        0.9999999999999999
+      ]
+    },
+    "ngsim|high": {
+      "n": 2376,
+      "trigger_ok": 2376,
+      "trigger_n": 2376,
+      "trigger_rate": 1.0,
+      "ci": [
+        0.9983857749188013,
+        0.9999999999999999
+      ]
+    },
+    "ngsim|moderate": {
+      "n": 1826,
+      "trigger_ok": 1826,
+      "trigger_n": 1826,
+      "trigger_rate": 1.0,
+      "ci": [
+        0.9979005833073202,
+        1.0
+      ]
+    },
+    "round|high": {
+      "n": 276,
+      "trigger_ok": 276,
+      "trigger_n": 276,
+      "trigger_rate": 1.0,
+      "ci": [
+        0.9862722340066665,
+        1.0
+      ]
+    },
+    "round|moderate": {
+      "n": 2477,
+      "trigger_ok": 2477,
+      "trigger_n": 2477,
+      "trigger_rate": 1.0,
+      "ci": [
+        0.9984514932351989,
+        1.0
+      ]
+    }
+  },
+  "extreme_overall": {
+    "n": 1036,
+    "recorded_ego": 0.5096525096525096,
+    "recorded_any": 0.612934362934363,
+    "predicted": 0.833976833976834,
+    "recorded_or_predicted": 0.8774131274131274,
+    "neither": 127
+  },
+  "overall_trigger_rate": [
+    29886,
+    30269
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "n_events": 372,
+  "direction_counts": {
+    "east-west": 302,
+    "west-east": 70
+  },
+  "ttc_warning_in_input": 35,
+  "events_with_reminders": 191,
+  "gpt4o": {
+    "actions": {
+      "1": 244,
+      "2": 9,
+      "3": 6,
+      "4": 63,
+      "5": 50
+    },
+    "entity_grounding": [
+      1554,
+      1554
+    ],
+    "ttc_expressions": 0,
+    "operands_grounded": null,
+    "arithmetic_correct": null,
+    "events_with_arith_error": 0,
+    "arithmetic_ops": 3111,
+    "arithmetic_ops_correct": 0.9993571198971392,
+    "operands_all": 2375,
+    "operands_all_grounded": 1.0,
+    "closing_verdicts": 1264,
+    "closing_correct": 0.8362341772151899,
+    "closing_correct_by_dir": {
+      "east-west": 0.8468292682926829,
+      "west-east": 0.7907949790794979
+    },
+    "rule_flip_rate_all": 0.05300632911392405,
+    "events_with_flip": 58,
+    "direction_n": 0,
+    "direction_correct": null,
+    "direction_correct_by_dir": {
+      "east-west": 0.0,
+      "west-east": 0.0
+    },
+    "rule_flip_rate": null,
+    "events_with_rule_flip": 0,
+    "admissible_rate": 0.9973118279569892,
+    "admissible_ci": [
+      0.9849319558776336,
+      0.9995253261262745
+    ],
+    "legal_rate": 1.0,
+    "reminder_recall": 1.0
+  },
+  "gpt41": {
+    "actions": {
+      "1": 236,
+      "2": 7,
+      "3": 2,
+      "4": 78,
+      "5": 49
+    },
+    "entity_grounding": [
+      1551,
+      1555
+    ],
+    "ttc_expressions": 27,
+    "operands_grounded": 1.0,
+    "arithmetic_correct": 1.0,
+    "events_with_arith_error": 0,
+    "arithmetic_ops": 2980,
+    "arithmetic_ops_correct": 1.0,
+    "operands_all": 2348,
+    "operands_all_grounded": 0.9982964224872232,
+    "closing_verdicts": 1251,
+    "closing_correct": 0.9376498800959233,
+    "closing_correct_by_dir": {
+      "east-west": 0.9324726911618669,
+      "west-east": 0.9590163934426229
+    },
+    "rule_flip_rate_all": 0.03996802557953637,
+    "events_with_flip": 45,
+    "direction_n": 23,
+    "direction_correct": 0.782608695652174,
+    "direction_correct_by_dir": {
+      "east-west": 0.782608695652174,
+      "west-east": 0.0
+    },
+    "rule_flip_rate": 0.08695652173913043,
+    "events_with_rule_flip": 2,
+    "admissible_rate": 1.0,
+    "admissible_ci": [
+      0.9897786727174427,
+      1.0
+    ],
+    "legal_rate": 1.0,
+    "reminder_recall": 1.0
+  },
+  "agreement": {
+    "n": 372,
+    "observed": 0.7338709677419355,
+    "kappa": 0.49798939491010213,
+    "kappa_ci": [
+      0.41073596498222464,
+      0.5798357676724395
+    ]
+  },
+  "admissible_set_size": {
+    "1": 6,
+    "2": 28,
+    "3": 181,
+    "4": 124,
+    "5": 33
+  }
+}

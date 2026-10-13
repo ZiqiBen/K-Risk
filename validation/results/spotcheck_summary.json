@@ -1,0 +1,80 @@
+{
+  "n": 100,
+  "V_trigger": [
+    96,
+    100,
+    [
+      0.9016278276739262,
+      0.984336949448152
+    ]
+  ],
+  "V_agent": [
+    96,
+    100,
+    [
+      0.9016278276739262,
+      0.984336949448152
+    ]
+  ],
+  "V_clean": [
+    91,
+    100,
+    [
+      0.8377362530335634,
+      0.9519280048361151
+    ]
+  ],
+  "all_three": [
+    87,
+    100,
+    [
+      0.7901947810519012,
+      0.9224290614158575
+    ]
+  ],
+  "by_source": {
+    "expresswayA": {
+      "sum": 10,
+      "size": 17
+    },
+    "freewayB": {
+      "sum": 11,
+      "size": 17
+    },
+    "highd": {
+      "sum": 20,
+      "size": 20
+    },
+    "ind": {
+      "sum": 16,
+      "size": 16
+    },
+    "ngsim": {
+      "sum": 14,
+      "size": 14
+    },
+    "round": {
+      "sum": 16,
+      "size": 16
+    }
+  },
+  "trigger_agreement": {
+    "agree": 0.98,
+    "kappa": 0.6575342465753422
+  },
+  "extreme_visual_record": [
+    6,
+    10
+  ],
+  "extreme_record_or_predicted": [
+    8,
+    10
+  ],
+  "artefact_vs_kinematic": {
+    "n": 24,
+    "agree": 0.4166666666666667,
+    "kappa": -0.2444444444444444,
+    "visual_clean": 15,
+    "kinematic_confirmed": 15
+  }
+}

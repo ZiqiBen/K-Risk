@@ -52,22 +52,14 @@ mpl.rcParams.update({
 })
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-# AD_Datasets repo root (HERE = .../AD_Datasets/K-Risk_data&pipeline/K-Risk_pipeline)
-_ROOT = os.path.dirname(os.path.dirname(HERE))
 
-# CSV inputs (task4/task5) live under Datasets-Jingguang; fall back to HERE.
-DATADIR = next(
-    (d for d in (HERE, os.path.join(_ROOT, "Datasets-Jingguang", "Figure",
-                                     "fig_statistic"))
-     if os.path.exists(os.path.join(
-         d, "task5_speed_distribution_by_dataset_hist.csv"))),
-    HERE)
+# CSV inputs (task4/task5) are written by compute_statistics.py next to this script.
+DATADIR = os.environ.get("KR_STATS_DIR", HERE)
 
-# Combined manuscript figure -> existing LaTeX project dir.
-OUTDIR = os.path.join(_ROOT, "LaTeX", "K_Risk_0620")
+# Combined figure, its panels, and the individual panels (enlarged text, PDF only).
+OUTDIR = os.environ.get("KR_FIG_OUT", os.path.join(HERE, "figures"))
 PANELDIR = os.path.join(OUTDIR, "panels")
-# Individual panels (enlarged text, PDF only) -> ImageGen/fig_statistic.
-INDIVDIR = os.path.join(_ROOT, "ImageGen", "fig_statistic")
+INDIVDIR = os.path.join(OUTDIR, "panels_large")
 os.makedirs(OUTDIR, exist_ok=True)
 os.makedirs(PANELDIR, exist_ok=True)
 os.makedirs(INDIVDIR, exist_ok=True)
